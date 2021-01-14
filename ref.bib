@@ -2,7 +2,6 @@
 % Encoding: UTF-
 
 
-
 @Article{RecoveryNianYuJCM,
 author = {Huang , Yunqing and Wei , Huayi and Yang , Wei and Yi , Nianyu },
 title = {Recovery Based Finite Element Method for Biharmonic Equation in 2D},
@@ -13,11 +12,46 @@ number = {1},
 pages = {84--102},
 abstract = {
 We design and numerically validate a recovery based linear finite element method for solving the biharmonic equation. The main idea is to replace the gradient operator $\nabla$ on linear finite element space by $G(\nabla)$ in the weak formulation of the biharmonic equation, where $G$ is the recovery operator which recovers the piecewise constant function into the linear finite element space. By operator $G$, Laplace operator $\Delta$ is replaced by $\nabla\cdot G(\nabla)$. Furthermore, the boundary condition on normal derivative $\nabla u\cdot \pmb{n}$ is treated by the boundary penalty method. The explicit matrix expression of the proposed method is also introduced. Numerical examples on the uniform and adaptive meshes are presented to illustrate the correctness and effectiveness of the proposed method.
-
 },
 issn = {1991-7139},
 doi = {https://doi.org/10.4208/jcm.1902-m2018-0187},
 url = {http://global-sci.org/intro/article_detail/jcm/13686.html}
+}
+
+@Article{YuanMFEM2020,
+	author = {Y. Yuan , and H. Song , and C. Li , and T. Sun , },
+	title = {An Upwind Mixed Finite Element Method on Changing Meshes for Positive Semi-Definite Oil-Water Displacement of Darcy-Forchheimer Flow in Porous Media},
+	journal = {Advances in Applied Mathematics and Mechanics},
+	year = {2020},
+	volume = {12},
+	number = {5},
+	pages = {1196--1223},
+	abstract = {
+	
+	An upwind mixed finite element method is proposed on changing meshes for solving a positive semi-definite miscible displacement problem of Darcy-Forchheimer flow in three-dimensional porous media. The pressure and velocity could be obtained together by using a mixed finite element, and the computational accuracy of velocity is improved. The concentration equation is solved by the upwind mixed finite element scheme on changing meshes, where the upwind approximation and an expanded mixed finite element are adopted for the convection and diffusion, respectively. It solves the convection-dominated diffusion problem well and has the following improvements. First, the conservation of mass, an important physical nature, is preserved. Second, it has high order computational accuracy. An optimal-order error estimates is concluded. Numerical experiments illustrate the efficiency and application of the presented scheme.
+	
+	},
+	issn = {2075-1354},
+	doi = {https://doi.org/10.4208/aamm.OA-2019-0256},
+	url = {http://global-sci.org/intro/article_detail/aamm/17745.html}
+}
+
+@Article{WeiFengNeuralNetwork,
+	author = {W. Feng , and H. Huang , },
+	title = {Fast Prediction of Immiscible Two-Phase Displacements in Heterogeneous Porous Media with Convolutional Neural Network},
+	journal = {Advances in Applied Mathematics and Mechanics},
+	year = {2020},
+	volume = {13},
+	number = {1},
+	pages = {140--162},
+	abstract = {
+	
+	A convolutional neural network is developed for rapidly predicting multiphase flow in heterogeneous porous media. Some direct numerical methods can acquire accurate results of multiphase flow in porous media. However, once the geometry of the porous media changes, it takes much computational time to perform a new simulation. Here, a deep neural network model in the field of semantic segmentation is developed. It takes the two-dimensional microstructure of heterogeneous porous media as inputs and is able to predict corresponding multiphase flow fields (pressure and saturation fields). Compared to the direct lattice Boltzmann simulations, the inference time on new geometry of porous media can be reduced by several orders of magnitude. Our results show that the machine learning method is a good prediction tool in a wide range of porosity and heterogeneity. Besides, to better understand the inherent process, a visible explanation is presented on what our neural networks have learned.
+	
+	},
+	issn = {2075-1354},
+	doi = {https://doi.org/10.4208/aamm.OA-2019-0377},
+	url = {http://global-sci.org/intro/article_detail/aamm/18344.html}
 }
 
 @article{fingerWidthliu1994closed,
@@ -295,18 +329,62 @@ eprint = {         https://doi.org/10.1063/1.3070527    }
 }
  
 @article{cueto2008nonlocal,
-	title = {Nonlocal Interface Dynamics and Pattern Formation in Gravity-Driven Unsaturated Flow through Porous Media},
+  title = {Nonlocal Interface Dynamics and Pattern Formation in Gravity-Driven Unsaturated Flow through Porous Media},
+  author = {Cueto-Felgueroso, Luis and Juanes, Ruben},
+  journal = {Phys. Rev. Lett.},
+  volume = {101},
+  issue = {24},
+  pages = {244504},
+  numpages = {4},
+  year = {2008},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.101.244504},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.101.244504}
+}
+
+@article{cueto2009phase,
 	author = {Cueto-Felgueroso, L. and Juanes, R.},
-	journal = {Phys. Rev. Lett.},
-	volume = {101},
-	issue = {24},
-	pages = {244504},
-	numpages = {4},
-	year = {2008},
-	month = {Dec},
+	title = {A phase field model of unsaturated flow},
+	journal = {Water Resources Research},
+	volume = {45},
+	number = {10},
+	pages = {},
+	keywords = {gravity fingering, preferential flow},
+	doi = {10.1029/2009WR007945},
+	url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2009WR007945},
+	eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2009WR007945},
+	abstract = {We present a phase field model of infiltration that explains the formation of gravity fingers during water infiltration in soil. The model is an extension of the traditional Richards equation, and it introduces a new term, a fourth-order derivative in space, but not a new parameter. We propose a scaling that links the magnitude of the new term to the relative strength of gravity-to-capillary forces already present in Richards' equation. We exploit the thermodynamic framework to design a flow potential that constrains the water saturation to be between 0 and 1, its physically admissible values. The model predicts a saturation overshoot at the wetting front, which is in good agreement with experimental measurements. Two-dimensional numerical simulations predict gravity fingers with the appearance and characteristics observed in visual laboratory experiments. A linear stability analysis of the model shows that there is a direct relation between saturation overshoot and the strength of the front instability. Therefore our theory supports the conjecture that saturation overshoot, a pileup of water at the wetting front, is a prerequisite for gravity fingering.},
+	year = {2009}
+}
+ 
+@article{cueto2009stability,
+	title = {Stability analysis of a phase-field model of gravity-driven unsaturated flow through porous media},
+	author = {Cueto-Felgueroso, L. and Juanes, R.},
+	journal = {Phys. Rev. E},
+	volume = {79},
+	issue = {3},
+	pages = {036301},
+	numpages = {13},
+	year = {2009},
+	month = {Mar},
 	publisher = {American Physical Society},
-	doi = {10.1103/PhysRevLett.101.244504},
-	url = {https://link.aps.org/doi/10.1103/PhysRevLett.101.244504}
+	doi = {10.1103/PhysRevE.79.036301},
+	url = {https://link.aps.org/doi/10.1103/PhysRevE.79.036301}
+}
+
+@article{gomez2013217cueto,
+title = "Three dimensional simulation of unstable gravity driven infiltration of water into a porous medium",
+journal = "Journal of Computational Physics",
+volume = "238",
+pages = "217 - 239",
+year = "2013",
+issn = "0021-9991",
+doi = "https://doi.org/10.1016/j.jcp.2012.12.018",
+url = "http://www.sciencedirect.com/science/article/pii/S0021999112007498",
+author = "Hector Gomez and Luis Cueto-Felgueroso and Ruben Juanes",
+keywords = "Phase-field, Infiltration, Gravity fingering, Isogeometric analysis",
+abstract = "Infiltration of water in dry porous media is subject to a powerful gravity-driven instability. Although the phenomenon of unstable infiltration is well known, its description using continuum mathematical models has posed a significant challenge for several decades. The classical model of water flow in the unsaturated flow, the Richards equation, is unable to reproduce the instability. Here, we present a computational study of a model of unsaturated flow in porous media that extends the Richards equation and is capable of predicting the instability and captures the key features of gravity fingering quantitatively. The extended model is based on a phase-field formulation and is fourth-order in space. The new model poses a set of challenges for numerical discretizations, such as resolution of evolving interfaces, stiffness in space and time, treatment of singularly perturbed equations, and discretization of higher-order spatial partial–differential operators. We develop a numerical algorithm based on Isogeometric Analysis, a generalization of the finite element method that permits the use of globally-smooth basis functions, leading to a simple and efficient discretization of higher-order spatial operators in variational form. We illustrate the accuracy, efficiency and robustness of our method with several examples in two and three dimensions in both homogeneous and strongly heterogeneous media. We simulate, for the first time, unstable gravity-driven infiltration in three dimensions, and confirm that the new theory reproduces the fundamental features of water infiltration into a porous medium. Our results are consistent with classical experimental observations that demonstrate a transition from stable to unstable fronts depending on the infiltration flux."
 }
 
 @article{beliaev2001theoretical,
@@ -417,7 +495,7 @@ doi = {10.4171/IFB/388}
 
 @article{gray1991unsaturated,
   title={Unsaturated flow theory including interfacial phenomena},
-  author={Gray, William G and Hassanizadeh, S Majid},
+  author={Gray, W.G. and Hassanizadeh, S.M.},
   journal={Water Resources Research},
   volume={27},
   number={8},
@@ -645,6 +723,16 @@ doi = {10.4171/IFB/388}
   author={Bear, J.},
   year={2013},
   publisher={Courier Corporation}
+}
+
+@incollection{philip1969theory,
+  title={Theory of infiltration},
+  author={Philip, J Re},
+  booktitle={Advances in hydroscience},
+  volume={5},
+  pages={215--296},
+  year={1969},
+  publisher={Elsevier}
 }
 
 @article{eliassi2003porous,
@@ -1073,35 +1161,7 @@ doi = {10.4171/IFB/388}
   Publisher                = {Cambridge Univ Press}
 }
 
-@article{cueto2009phase,
-	author = {Cueto-Felgueroso, L. and Juanes, R.},
-	title = {A phase field model of unsaturated flow},
-	journal = {Water Resources Research},
-	volume = {45},
-	number = {10},
-	pages = {},
-	keywords = {gravity fingering, preferential flow},
-	doi = {10.1029/2009WR007945},
-	url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2009WR007945},
-	eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2009WR007945},
-	abstract = {We present a phase field model of infiltration that explains the formation of gravity fingers during water infiltration in soil. The model is an extension of the traditional Richards equation, and it introduces a new term, a fourth-order derivative in space, but not a new parameter. We propose a scaling that links the magnitude of the new term to the relative strength of gravity-to-capillary forces already present in Richards' equation. We exploit the thermodynamic framework to design a flow potential that constrains the water saturation to be between 0 and 1, its physically admissible values. The model predicts a saturation overshoot at the wetting front, which is in good agreement with experimental measurements. Two-dimensional numerical simulations predict gravity fingers with the appearance and characteristics observed in visual laboratory experiments. A linear stability analysis of the model shows that there is a direct relation between saturation overshoot and the strength of the front instability. Therefore our theory supports the conjecture that saturation overshoot, a pileup of water at the wetting front, is a prerequisite for gravity fingering.},
-	year = {2009}
-}
- 
-@article{cueto2009stability,
-	title = {Stability analysis of a phase-field model of gravity-driven unsaturated flow through porous media},
-	author = {Cueto-Felgueroso, L. and Juanes, R.},
-	journal = {Phys. Rev. E},
-	volume = {79},
-	issue = {3},
-	pages = {036301},
-	numpages = {13},
-	year = {2009},
-	month = {Mar},
-	publisher = {American Physical Society},
-	doi = {10.1103/PhysRevE.79.036301},
-	url = {https://link.aps.org/doi/10.1103/PhysRevE.79.036301}
-}
+
  
 @article{diment1983stability,
 	author = {Diment, G. A. and Watson, K. K.},
