@@ -4,7 +4,718 @@
 
 
 
+@Article{bian202108,
+	author = {Bian, H. and Shen, Y. and Hu, G.},
+	title = {An $h$-Adaptive Finite Element Solution of the Relaxation Non-Equilibrium Model for Gravity-Driven Fingers},
+	journal = {Advances in Applied Mathematics and Mechanics},
+	year = {2021},
+	volume = {13},
+	number = {6},
+	pages = {1418--1440},
+	abstract = {
+	The study on the fingering phenomenon has been playing an important role in understanding the mechanism of the fluid flow through the porous media. In this paper, a numerical method consisting of the Crank-Nicolson scheme for the temporal discretization and the finite element method for the spatial discretization is proposed for the relaxation non-equilibrium Richards equation in simulating the fingering phenomenon. Towards the efficiency and accuracy of the numerical simulations, a predictor-corrector process is used for resolving the nonlinearity of the equation, and an $h$-adaptive mesh method is introduced for accurately resolving the solution around the wetting front region, in which a heuristic a posteriori error indicator is designed for the purpose. In numerical simulations, a traveling wave solution of the governing equation is derived for checking the numerical convergence of the proposed method. The effectiveness of the $h$-adaptive method is also successfully demonstrated by numerical experiments. Finally the mechanism on generating fingers is discussed by numerically studying several examples.
+	},
+	issn = {2075-1354},
+	doi = {https://doi.org/10.4208/aamm.OA-2020-0218},
+	url = {http://global-sci.org/intro/article_detail/aamm/19429.html}
+}
 
+
+@book{joseph2013stability,
+	title={Stability of fluid motions I},
+	author={Joseph, D.D.},
+	volume={27},
+	year={2013},
+	publisher={Springer Science \& Business Media}
+}
+
+@ARTICLE{tinney1967direct,
+	author={Tinney, W.F. and Walker, J.W.},  
+	journal={Proceedings of the IEEE},   
+	title={Direct solutions of sparse network equations by optimally ordered triangular factorization},   
+	year={1967},  
+	volume={55},  
+	number={11},  
+	pages={1801-1809},  
+	abstract={Matrix inversion is very inefficient for computing direct solutions of the large sparse systems of linear equations that arise in many network problems. Optimally ordered triangular factorization of sparse matrices is more efficient and offers other important computational advantages in some applications. With this method, direct solutions are computed from sparse matrix factors instead of from a full inverse matrix, thereby gaining a significant advantage in speed, computer memory requirements, and reduced round-off error. Improvements of tea to one or more in speed and problem size over present applications of the inverse can be achieved in many cases. Details of the method, numerical examples, and the results of a large problem are given.},  keywords={},  
+	doi={10.1109/PROC.1967.6011},  
+	ISSN={1558-2256},  
+	month={Nov},}
+@inproceedings{bulucc2009parallel,
+	author = {Bulu\c{c}, A. and Fineman, J.T. and Frigo, M. and Gilbert, J.R. and Leiserson, C.E.},
+	title = {Parallel Sparse Matrix-Vector and Matrix-Transpose-Vector Multiplication Using Compressed Sparse Blocks},
+	year = {2009},
+	isbn = {9781605586069},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/1583991.1584053},
+	doi = {10.1145/1583991.1584053},
+	abstract = {This paper introduces a storage format for sparse matrices, called compressed sparse
+	blocks (CSB), which allows both Ax and A,x to be computed efficiently in parallel,
+	where A is an n\texttimes{}n sparse matrix with nnzen nonzeros and x is a dense n-vector. Our
+	algorithms use Θ(nnz) work (serial running time) and Θ(√nlgn) span (critical-path
+	length), yielding a parallelism of Θ(nnz/√nlgn), which is amply high for virtually
+	any large matrix. The storage requirement for CSB is the same as that for the more-standard
+	compressed-sparse-rows (CSR) format, for which computing Ax in parallel is easy but
+	A,x is difficult. Benchmark results indicate that on one processor, the CSB algorithms
+	for Ax and A,x run just as fast as the CSR algorithm for Ax, but the CSB algorithms
+	also scale up linearly with processors until limited by off-chip memory bandwidth.},
+	booktitle = {Proceedings of the Twenty-First Annual Symposium on Parallelism in Algorithms and Architectures},
+	pages = {233–244},
+	numpages = {12},
+	keywords = {span, compressed sparse blocks, compressed sparse rows, storage format, matrix-vector multiplication, compressed sparse columns, sparse matrix, parallelism, matrix transpose, work, multithreaded algorithm},
+	location = {Calgary, AB, Canada},
+	series = {SPAA '09}
+}
+
+@INPROCEEDINGS{yan2017efficient,
+	author={Yan, Di and Wu, Tao and Liu, Ying and Gao, Yang},
+	booktitle={2017 IEEE 17th International Conference on Communication Technology (ICCT)}, 
+	title={An efficient sparse-dense matrix multiplication on a multicore system}, 
+	year={2017},
+	volume={},
+	number={},
+	pages={1880-1883},
+	abstract={Deep Neural Network (DNN) is currently widely used in various applications, such as speech recognition, computer vision, etc. The computation kernel of DNN-based applications is large sparse-dense matrix multiplication. As the performance of existing methods and software libraries for sparse matrix multiplication is not as good as expected, real-time recognition process has not been achieved yet. Therefore, we propose a novel sparse matrix storage format, block-based CSR (compressed storage format) and COO (coordinate format), called BCSR&amp;BCOO, and a thread-scalable computing kernel for sparse-dense matrix multiplication, called BSpMM. We evaluate the performance of our proposed data structure and computing kernel in a real application in DNN-based online speech recognition. The experimental results demonstrate up to 4x speedup over Intel MKL on a typical CPU-based multicore system. Significant improvement in FLOPS is observed as well.},
+	keywords={},
+	doi={10.1109/ICCT.2017.8359956},
+	ISSN={2576-7828},
+	month={Oct},}
+
+
+@book{Lawes1882,
+	author = {	Lawes, J.B., Gilbert, J.H. and Warington, R.},
+	title = { On the Amount and Composition of the Rain and Drainage-Waters collected at Rothamsted. Part 3. },
+	journal={Royal Agricultural Society of England},
+	year = {1881},
+	URL = {	https://catalog.hathitrust.org/Record/100165514},
+}
+
+
+@article{WaterintheGround1990ECQ,
+	title={Water in the Ground},
+	journal={Engineering, Cornell Quarterly},
+	volume={25},
+	number={1},
+	pages={1--44},
+	year={1990}
+}
+
+@article{hu2016adjoint,
+	title = {Adjoint-based an adaptive finite volume method for steady {Euler} equations with non-oscillatory k-exact reconstruction},
+	journal = {Computers \& Fluids},
+	volume = {139},
+	pages = {174-183},
+	year = {2016},
+	note = {13th USNCCM International Symposium of High-Order Methods for Computational Fluid Dynamics - A special issue dedicated to the 60th birthday of Professor David Kopriva},
+	issn = {0045-7930},
+	doi = {https://doi.org/10.1016/j.compfluid.2016.06.012},
+	url = {https://www.sciencedirect.com/science/article/pii/S0045793016301979},
+	author = {G. Hu and X. Meng and N. Yi},
+	keywords = {Steady euler equations, High order finite volume methods, -adaptive method, Adjoint-based error estimation, Non-oscillatory -exact reconstruction},
+	abstract = {In [An adaptive finite volume solver for steady Euler equations with non-oscillatory k-exact reconstruction, G. H. Hu and N.Y. Yi, J. Comput. Phys., Vol. 312, pp. 235–251], a high order finite volume method was proposed for steady Euler equations. The method consists of a Newton iteration method to linearize the governing equations, and a geometrical multigrid method to solve the derived system. The non-oscillatory k-exact reconstruction was developed towards the high quality solution reconstruction, and h-adaptive method was introduced to handle the efficiency issue. To further improve the numerical method, we study the following two issues in detail in this paper. First, we test the new reconstruction patch for the element which locates on the domain boundary, which could improve the convergence of the steady state significantly. Second, the adjoint-based a posteriori error estimation is introduced for the h-adaptive method, which could deliver more efficient adaptive refinement of the mesh. The numerical tests show the effectiveness of the proposed method.}
+}
+
+@article{chen2017integrated,
+	title={Integrated linear reconstruction for finite volume scheme on arbitrary unstructured grids},
+	author={Chen, L. and Hu, G. and Li, R.},
+	journal={arXiv preprint arXiv:1703.01055},
+	year={2017}
+}
+
+@article{gerasimov2012corners,
+	author = {Gerasimov, T. and Stylianou, A. and Sweers, G.},
+	title = {Corners Give Problems When Decoupling Fourth Order Equations Into Second Order Systems},
+	journal = {SIAM Journal on Numerical Analysis},
+	volume = {50},
+	number = {3},
+	pages = {1604--1623},
+	year = {2012},
+	doi = {10.1137/100806151},
+	URL = { 	https://doi.org/10.1137/100806151	},
+	eprint = { 	https://doi.org/10.1137/100806151	}
+}
+
+@article{monk1987mixed,
+	author = {Monk, P.},
+	title = {A Mixed Finite Element Method for the Biharmonic Equation},
+	journal = {SIAM Journal on Numerical Analysis},
+	volume = {24},
+	number = {4},
+	pages = {737--749},
+	year = {1987},
+	doi = {10.1137/0724048},
+	URL = { 	https://doi.org/10.1137/0724048	},
+	eprint = { 	https://doi.org/10.1137/0724048	}	
+}
+
+@incollection{ciarlet1974mixed,
+	title = {{A Mixed Finite Element Method for the Biharmonic Equation}},
+	editor = {Carl {de Boor}},
+	booktitle = {Mathematical Aspects of Finite Elements in Partial Differential Equations},
+	publisher = {Academic Press},
+	pages = {125--145},
+	year = {1974},
+	isbn = {978-0-12-208350-1},
+	doi = {https://doi.org/10.1016/B978-0-12-208350-1.50009-1},
+	url = {https://www.sciencedirect.com/science/article/pii/B9780122083501500091},
+	author = {P.G. CIARLET and P.A. RAVIART},
+	abstract = {Publisher Summary
+	This chapter explains a mixed finite element method for the Biharmonic equation. One way to avoid the computational difficulty is to use a non-conforming method, in which the approximate solution lies in a finite-dimensional space. The other way to avoid the computational difficulty is based on a different variational principle called the standard variational formulation of problem. Different variational principle falls into two categories: either the variational principle is explicitly dependent upon a given triangulation of the set Ώ, in which case the method is called hybrid, or otherwise, it is called a mixed method. The chapter also discusses an approximate method related to yet another variational principle, in which the Laplacian Δu of the solution plays a special role.}
+}
+
+@book{Ciarlet2002,
+	author = {Ciarlet, P.G.},
+	title = {The Finite Element Method for Elliptic Problems, Classics in Applied Mathematics, Vol. 40},
+	publisher = {SIAM},
+	year = {2002},
+	doi = {10.1137/1.9780898719208},
+	address = {},
+	edition   = {},
+	URL = {https://epubs.siam.org/doi/abs/10.1137/1.9780898719208},
+	eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9780898719208}
+}
+
+
+@article{neel1943theorie,
+	title={Th{\'e}orie des lois d’aimantation de Lord Rayleigh: II Multiples domaines et Champ coercitif},
+	author={N{\'e}el, L.},
+	journal={Cahiers de physique},
+	volume={13},
+	pages={18--30},
+	year={1943}
+}
+
+@article{neel1942theorie,
+	title={Th{\'e}orie des lois d’aimantation de Lord Rayleigh et les d{\'e}placements d’une paroi isol{\'e}e},
+	author={N{\'e}el, L.},
+	journal={Cahiers de physique},
+	volume={12},
+	pages={1--20},
+	year={1942}
+}
+
+@article{hu2013adaptive,
+	title = {An adaptive finite volume method for 2D steady Euler equations with WENO reconstruction},
+	journal = {Journal of Computational Physics},
+	volume = {252},
+	pages = {591-605},
+	year = {2013},
+	issn = {0021-9991},
+	doi = {https://doi.org/10.1016/j.jcp.2013.07.006},
+	url = {https://www.sciencedirect.com/science/article/pii/S0021999113004786},
+	author = {G. Hu},
+	keywords = {Adaptive methods, Finite volume methods, Steady Euler equations, WENO reconstruction, Unstructured grids},
+	abstract = {An adaptive finite volume method for 2D steady Euler equations on unstructured grids is proposed. The framework of the finite volume method for the steady Euler equations follows the one in the paper [G.H. Hu, R. Li, and T. Tang, A robust WENO type finite volume solver for steady Euler equations on unstructured grids, Commun. Comput. Phys. 9 (2011) 627–648]. In this paper, we introduce the mesh adaptive methods to improve the above numerical method. The features of this work include: (i) different reconstruction stencils for WENO reconstruction are discussed in detail, including their performance on the convergence of steady state solutions and on the application of h-adaptive methods, and (ii) an effective indicator for generating quality nonuniform mesh is proposed, which is based on the entropy production. The improvement of the numerical methods is demonstrated by plenty of numerical examples.}
+}
+
+@article{lamichhane2014finite,
+	title={A finite element method for a biharmonic equation based on gradient recovery operators},
+	author={Lamichhane, B.P.},
+	journal={BIT Numerical Mathematics},
+	volume={54},
+	number={2},
+	pages={469--484},
+	year={2014},
+	publisher={Springer}
+}
+
+@article{lamichhane2011stabilized,
+	title = {A stabilized mixed finite element method for the biharmonic equation based on biorthogonal systems},
+	journal = {Journal of Computational and Applied Mathematics},
+	volume = {235},
+	number = {17},
+	pages = {5188-5197},
+	year = {2011},
+	issn = {0377-0427},
+	doi = {https://doi.org/10.1016/j.cam.2011.05.005},
+	url = {https://www.sciencedirect.com/science/article/pii/S0377042711002524},
+	author = {B.P. Lamichhane},
+	keywords = {Biharmonic equation, Clamped plate, Mixed finite element method, Saddle point problem, Biorthogonal system, A priori estimate},
+	abstract = {We propose a stabilized finite element method for the approximation of the biharmonic equation with a clamped boundary condition. The mixed formulation of the biharmonic equation is obtained by introducing the gradient of the solution and a Lagrange multiplier as new unknowns. Working with a pair of bases forming a biorthogonal system, we can easily eliminate the gradient of the solution and the Lagrange multiplier from the saddle point system leading to a positive definite formulation. Using a superconvergence property of a gradient recovery operator, we prove an optimal a priori estimate for the finite element discretization for a class of meshes.}
+}
+
+@article{guo2018c,
+	title={A { $C^{0}$} Linear Finite Element Method for Biharmonic Problems},
+	author={Guo, H. and Zhang, Z. and Zou, Q.},
+	journal={Journal of Scientific Computing},
+	volume={74},
+	number={3},
+	pages={1397--1422},
+	year={2018},
+	publisher={Springer}
+}
+
+@article{chen2016recovery,
+	title={{A recovery based linear finite element method for 1D bi-harmonic problems}},
+	author={Chen, H. and Zhang, Z. and Zou, Q.},
+	journal={Journal of Scientific Computing},
+	volume={68},
+	number={1},
+	pages={375--394},
+	year={2016},
+	publisher={Springer}
+}
+
+@article{chen2017linear,
+	author = {Chen, H. and Guo, H. and Zhang, Z. and Zou, Q.},
+	title = "{A {$C^0$} linear finite element method for two fourth-order eigenvalue problems}",
+	journal = {IMA Journal of Numerical Analysis},
+	volume = {37},
+	number = {4},
+	pages = {2120-2138},
+	year = {2016},
+	month = {11},
+	abstract = "{In this article, we construct a \\$C^0\\$ linear finite element method for two fourth-order eigenvalue problems: the biharmonic and the transmission eigenvalue problems. The basic idea of our construction is to use gradient recovery operator to compute the higher-order derivatives of a \\$C^0\\$ piecewise linear function, which do not exist in the classical sense. For the biharmonic eigenvalue problem, the optimal convergence rates of eigenvalue/eigenfunction approximation are theoretically derived and numerically verified. For the transmission eigenvalue problem, the optimal convergence rate of the eigenvalues is verified by two numerical examples: one for constant refraction index and the other for variable refraction index. Compared with existing schemes in the literature, the proposed scheme is straightforward and simpler, and computationally less expensive to achieve the same order of accuracy.}",
+	issn = {0272-4979},
+	doi = {10.1093/imanum/drw051},
+	url = {https://doi.org/10.1093/imanum/drw051},
+	eprint = {https://academic.oup.com/imajna/article-pdf/37/4/2120/20667019/drw051.pdf},
+}
+
+@article{eymard2012finite,
+	title={Finite volume schemes for the biharmonic problem on general meshes},
+	author={Eymard, R. and Gallou{\"e}t, T. and Herbin, R. and Linke, A.},
+	journal={Mathematics of Computation},
+	volume={81},
+	number={280},
+	pages={2019--2048},
+	year={2012}
+}
+
+@article{glowinski1979numerical,
+	title={Numerical methods for the first biharmonic equation and for the two-dimensional Stokes problem},
+	author={Glowinski, R. and Pironneau, O.},
+	journal={SIAM review},
+	volume={21},
+	number={2},
+	pages={167--212},
+	year={1979},
+	publisher={SIAM}
+}
+
+@article{chen2008fast,
+	title={A fast finite difference method for biharmonic equations on irregular domains and its application to an incompressible Stokes flow},
+	author={Chen, G. and Li, Z. and Lin, P.},
+	journal={Advances in Computational Mathematics},
+	volume={29},
+	number={2},
+	pages={113--133},
+	year={2008},
+	publisher={Springer}
+}
+
+@article{ben2009compact,
+	title={A compact difference scheme for the biharmonic equation in planar irregular domains},
+	author={Ben-Artzi, M. and Chorev, I. and Croisille, J.P. and Fishelov, D.},
+	journal={SIAM Journal on Numerical Analysis},
+	volume={47},
+	number={4},
+	pages={3087--3108},
+	year={2009},
+	publisher={SIAM}
+}
+
+@article{suli2007hp,
+	title = {hp-version interior penalty DGFEMs for the biharmonic equation},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	volume = {196},
+	number = {13},
+	pages = {1851-1863},
+	year = {2007},
+	issn = {0045-7825},
+	doi = {https://doi.org/10.1016/j.cma.2006.06.014},
+	url = {https://www.sciencedirect.com/science/article/pii/S0045782506003756},
+	author = {E. Süli and I. Mozolevski},
+	keywords = {Discontinuous Galerkin methods, Biharmonic equation},
+	abstract = {We construct hp-version interior penalty discontinuous Galerkin finite element methods (DGFEMs) for the biharmonic equation, including symmetric and nonsymmetric interior penalty discontinuous Galerkin methods and their combinations: semisymmetric methods. Our main concern is to establish the stability and to develop the a priori error analysis of these methods. We establish error bounds that are optimal in h and slightly suboptimal in p. The theoretical results are confirmed by numerical experiments.}
+}
+
+@ARTICLE{georgoulis2009discontinuous,
+	author={Georgoulis, E.H. and Houston, P.},
+	journal={IMA Journal of Numerical Analysis}, 
+	title={Discontinuous {G}alerkin methods for the biharmonic problem}, 
+	year={2009},
+	volume={29},
+	number={3},
+	pages={573-594},
+	abstract={This work is concerned with the design and analysis of hp-version discontinuous Galerkin (DG) finite element methods for boundary-value problems involving the biharmonic operator. The first part extends the unified approach of Arnold et al. (2001/2002, SIAM J. Numer. Anal.,39, 1749-–1779) developed for the Poisson problem, to the design of DG methods via an appropriate choice of numerical flux functions for fourth-order problems; as an example, we retrieve the interior penalty DG method developed by Süli & Mozolevski (2007, Comput. Methods Appl. Mech. Eng., 196, 1851-–1863). The second part of this work is concerned with a new a priori error analysis of the hp-version interior penalty DG method, when the error is measured in terms of both the energy norm and the L2-norm, as well as certain linear functionals of the solution, for elemental polynomial degrees p ≥ 2. Also, provided that the solution is piecewise analytic in an open neighbourhood of each element, exponential convergence is also proved for the p-version of the DG method. The sharpness of the theoretical developments is illustrated by numerical experiments.},
+	keywords={},
+	doi={10.1093/imanum/drn015},
+	ISSN={1464-3642},
+	month={July},}
+
+@article{brenner2005c,
+	title={{$C^0$ interior penalty methods for fourth order elliptic boundary value problems on polygonal domains}},
+	author={Brenner, S.C. and Sung, L.Y.},
+	journal={Journal of Scientific Computing},
+	volume={22},
+	number={1},
+	pages={83--118},
+	year={2005},
+	publisher={Springer}
+}
+
+@article{engel2002continuous,
+	title = {Continuous/discontinuous finite element approximations of fourth-order elliptic problems in structural and continuum mechanics with applications to thin beams and plates, and strain gradient elasticity},
+	journal = {Computer Methods in Applied Mechanics and Engineering},
+	volume = {191},
+	number = {34},
+	pages = {3669-3750},
+	year = {2002},
+	issn = {0045-7825},
+	doi = {https://doi.org/10.1016/S0045-7825(02)00286-4},
+	url = {https://www.sciencedirect.com/science/article/pii/S0045782502002864},
+	author = {G. Engel and K. Garikipati and T.J.R. Hughes and M.G. Larson and L. Mazzei and R.L. Taylor},
+	abstract = {A new finite element method for fourth-order elliptic partial differential equations is presented and applied to thin bending theory problems in structural mechanics and to a strain gradient theory problem. The method combines concepts from the continuous Galerkin (CG) method, the discontinuous Galerkin (DG) method and stabilization techniques. A brief review of the CG method, the DG method and stabilization techniques highlights the advantages and disadvantages of these methods and suggests a new approach for the solution of fourth-order elliptic problems. A continuous/discontinuous Galerkin (C/DG) method is proposed which uses C0-continuous interpolation functions and is formulated in the primary variable only. The advantage of this formulation over a more traditional mixed approach is that the introduction of additional unknowns and related difficulties can be avoided. In the context of thin bending theory, the C/DG method leads to a formulation where displacements are the only degrees of freedom, and no rotational degrees of freedom need to be considered. The main feature of the C/DG method is the weak enforcement of continuity of first and higher-order derivatives through stabilizing terms on interior boundaries. Consistency, stability and convergence of the method are shown analytically. Numerical experiments verify the theoretical results, and applications are presented for Bernoulli–Euler beam bending, Poisson–Kirchhoff plate bending and a shear layer problem using Toupin–Mindlin strain gradient theory.}
+}
+
+@incollection{brenner2011c,
+	title={{$C^0$ interior penalty methods}},
+	author={Brenner, S.C.},
+	booktitle={Frontiers in Numerical Analysis-Durham 2010},
+	pages={79--147},
+	year={2011},
+	publisher={Springer}
+}
+
+@article{zhang2008invalidity,
+	title={{ Invalidity of decoupling a biharmonic equation to two Poisson equations on non-convex polygons}},
+	author={Zhang, S. and Zhang, Z. and others},
+	journal={Int. J. Numer. Anal. Model},
+	volume={5},
+	number={1},
+	pages={73--76},
+	year={2008}
+}
+
+@article{wang2004mixed,
+	title = {A mixed finite volume element method based on rectangular mesh for biharmonic equations},
+	journal = {Journal of Computational and Applied Mathematics},
+	volume = {172},
+	number = {1},
+	pages = {117-130},
+	year = {2004},
+	issn = {0377-0427},
+	doi = {https://doi.org/10.1016/j.cam.2004.02.002},
+	url = {https://www.sciencedirect.com/science/article/pii/S0377042704001116},
+	author = {T. Wang},
+	keywords = {Biharmonic equation, Rectangular mesh, Mixed finite volume element method, Error estimate},
+	abstract = {This paper presents a mixed finite volume element scheme based on rectangular partition for solving biharmonic equations. It also gives a kind of adaptive Uzawa iteration method for the scheme. It is rigorously proved that the scheme has first-order accuracy in H1 semi-norm and L2 norm according to the characteristics of the scheme. Finally, two numerical examples illustrate the effectiveness of the method.}
+}
+
+@article{gudi2008mixed,
+	title={Mixed discontinuous {G}alerkin finite element method for the biharmonic equation},
+	author={Gudi, T. and Nataraj, N. and Pani, A.K.},
+	journal={Journal of Scientific Computing},
+	volume={37},
+	number={2},
+	pages={139--161},
+	year={2008},
+	publisher={Springer}
+}
+
+@book{fortin1991mixed,
+	title={Mixed and hybrid finite element methods},
+	author={Fortin, M. and Brezzi, F.},
+	year={1991},
+	publisher={New York: Springer-Verlag}
+}
+
+@article{behrens2011mixed,
+	title={A mixed method for the biharmonic problem based on a system of first-order equations},
+	author={Behrens, E.M. and Guzm{\'a}n, J.},
+	journal={SIAM Journal on Numerical Analysis},
+	volume={49},
+	number={2},
+	pages={789--817},
+	year={2011},
+	publisher={SIAM}
+}
+
+@article{ming2006morley,
+	title={The Morley element for fourth order elliptic equations in any dimensions},
+	author={Wang, M. and Xu, J.},
+	journal={Numerische Mathematik},
+	volume={103},
+	number={1},
+	pages={155--169},
+	year={2006},
+	publisher={Springer}
+}
+
+@article{morley1968triangular,
+	title={The triangular equilibrium element in the solution of plate bending problems},
+	author={Morley, L.S.D.},
+	journal={Aeronautical Quarterly},
+	volume={19},
+	number={2},
+	pages={149--169},
+	year={1968},
+	publisher={Cambridge University Press}
+}
+
+@article{hu2013lower,
+	title={{A Lower Bound of the $L^2$ Norm Error Estimate for the Adini Element of the Biharmonic Equation}},
+	author={Hu, J. and Shi, Z.},
+	journal={SIAM Journal on Numerical Analysis},
+	volume={51},
+	number={5},
+	pages={2651--2659},
+	year={2013},
+	publisher={SIAM}
+}
+
+@article{bi2004mortar,
+	ISSN = {02549409, 19917139},
+	URL = {http://www.jstor.org/stable/43693173},
+	abstract = {In this paper, we construct and analyse a mortar finite volume method for the discretization for the biharmonic problem in R². This method is based on the mortar-type Adini nonconforming finite element spaces. The optimal order H²-seminorm error estimate between the exact solution and the mortar Adini finite volume solution of the biharmonic equation is established.},
+	author = {C. Bi and L. Li},
+	journal = {Journal of Computational Mathematics},
+	number = {3},
+	pages = {475--488},
+	publisher = {Institute of Computational Mathematics and Scientific/Engineering Computing},
+	title = {{MORTAR FINITE VOLUME METHOD WITH ADINI ELEMENT FOR BIHARMONIC PROBLEM}},
+	volume = {22},
+	year = {2004}
+}
+
+
+
+@article{ciarlet1991ZAMM,
+	author = {Grund, F.},
+	title = {Ciarlet, P. G.; Lions, J. L. (eds.), Handbook of Numerical Analysis. Vol. 11: Finite Element Methods (Part 1). Amsterdam etc., North Holland 1991. X, 928 pp., Dfl. 275.00. ISBN 0-444-70365-9},
+	journal = {ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik},
+	volume = {72},
+	number = {12},
+	pages = {620-620},
+	doi = {https://doi.org/10.1002/zamm.19920721203},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/zamm.19920721203},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/zamm.19920721203},
+	year = {1992}
+}
+
+@article{kissling2012simulation,
+	author = {Kissling, F. and Helmig, R. and Rohde, C.},
+	title = {Simulation of Infiltration Processes in the Unsaturated Zone Using a Multiscale Approach},
+	journal = {Vadose Zone Journal},
+	volume = {11},
+	number = {3},
+	pages = {vzj2011.0193},
+	doi = {https://doi.org/10.2136/vzj2011.0193},
+	url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/vzj2011.0193},
+	eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/vzj2011.0193},
+	abstract = {We consider the infiltration of a wetting fluid into a homogeneous porous medium and the formation of preferential flow paths with saturation overshoots. These are caused by dynamic capillary pressure effects which can be modeled by the rate-dependent approach of Hassanizadeh and Gray. To track the overshoot wave numerically, we propose an extended Heterogeneous Multiscale Method. In the approach, the rate-dependent model takes the role of a microscale model. The algorithm is applied to several infiltration problems.},
+	year = {2012}
+}
+
+@article{hilpert2012velocity,
+	author = {Hilpert, M.},
+	title = {Velocity-dependent capillary pressure in theory for variably-saturated liquid infiltration into porous media},
+	journal = {Geophysical Research Letters},
+	volume = {39},
+	number = {6},
+	pages = {},
+	keywords = {dynamic capillary pressure, infiltration, two-phase flow},
+	doi = {https://doi.org/10.1029/2012GL051114},
+	url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2012GL051114},
+	eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2012GL051114},
+	abstract = {Standard theory for liquid infiltration into porous media cannot explain saturation overshoot at an infiltration front. Based on a recent generalization of the Green-Ampt approach, a new theory for variably-saturated flow is presented that assumes that capillary pressure does not only depend on liquid content but also on the flow velocity. The Eulerian expression for the nonequilibrium capillary pressure is rotationally invariant and attempts to capture the conjecture that dynamic effects are more pronounced if flow is associated with moving fluid-fluid interfaces which cause a dynamic contact angle. The new theory correctly predicts how overshoot depends on the downstream and upstream liquid contents as well as on grain size. The theory also yields the hydrostatic pressure distribution in the liquid and allows for liquid contents exceeding the saturated liquid content of the main imbibition curve that may occur for overshoot.},
+	year = {2012}
+}
+
+@article{barenblatt1971filtration,
+	title={Filtration of two nonmixing fluids in a homogeneous porous medium},
+	author={Barenblatt, G.I.},
+	journal={Fluid Dynamics},
+	volume={6},
+	number={5},
+	pages={857--864},
+	year={1971},
+	publisher={Springer}
+}
+
+@article{bagagiolo2000hysteresis,
+  title={Hysteresis in Filtration through Porous Media},
+  author={F. Bagagiolo and A. Visintin},
+  journal={Zeitschrift Fur Analysis Und Ihre Anwendungen},
+  year={2000},
+  volume={19},
+  pages={977-997}
+}
+
+@article{vachaud1972study,
+author = {Vachaud, G. and Vauclin, M. and Wakil, M.},
+title = {A Study of the Uniqueness of the Soil Moisture Characteristic During Desorption by Vertical Drainage},
+journal = {Soil Science Society of America Journal},
+volume = {36},
+number = {3},
+pages = {531-532},
+doi = {https://doi.org/10.2136/sssaj1972.03615995003600030044x},
+url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj1972.03615995003600030044x},
+eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/sssaj1972.03615995003600030044x},
+abstract = {Abstract Previous experiments concerning the desorption of a horizontal column of uniform soil suggested that the moisture characteristic was not unique throughout the column. Further desorption experiments have been carried out on a vertical column. The results are consistent with those obtained previously, and give further information on the dual dependence of ψ on θ and on ∂ψ/∂t.},
+year = {1972}
+}
+
+
+@article{smiles1971test,
+  author = {Smiles, D. E. and Vachaud, G. and Vauclin, M.},
+title = {A Test of the Uniqueness of the Soil Moisture Characteristic During Transient, Nonhysteretic Flow of Water in a Rigid Soil},
+journal = {Soil Science Society of America Journal},
+volume = {35},
+number = {4},
+pages = {534-539},
+doi = {https://doi.org/10.2136/sssaj1971.03615995003500040018x},
+url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj1971.03615995003500040018x},
+eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/sssaj1971.03615995003500040018x},
+abstract = {Abstract Quick response water potential and nondestructive water content measurements indicate that during transient, nonhysteretic flow of water following a rapid change of water content at one end of a horizontal column of soil, the soil moisture characteristic curve is a unique function during sorption from a particular initial water content, but during desorption there is a multiplicity of curves. These transient curves depend on the magnitude of the imposed water content change and also on the speed with which static equilibrium is achieved after the change. The consequences of this behavior are discussed in terms of diffusion theory, and it is concluded that it would be unwise to apply this theory to desorption situations until the quantitative significance of this behavior is determined for other materials.},
+year = {1971}
+}
+
+@article{topp1967comparison,
+  author = {Topp, G. C. and Klute, A. and Peters, D. B.},
+title = {Comparison of Water Content-Pressure Head Data Obtained by Equilibrium, Steady-State, and Unsteady-State Methods},
+journal = {Soil Science Society of America Journal},
+volume = {31},
+number = {3},
+pages = {312-314},
+doi = {https://doi.org/10.2136/sssaj1967.03615995003100030009x},
+url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj1967.03615995003100030009x},
+eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/sssaj1967.03615995003100030009x},
+abstract = {Abstract The water content-pressure head relationship for a small, well-confined, rectangular sample of fine sand was obtained under different water flow conditions. Water contents were measured by a gamma system and pressure heads were measured by a tensiometer-pressure transducer combination. During drying, more water was retained in the sand at a given pressure head in the unsteady flow case than in the static equilibrium and steady-state cases, which agreed with each other.},
+year = {1967}
+}
+
+@article{carrillo1999uniqueness,
+  title = {Uniqueness of Renormalized Solutions of Degenerate Elliptic–Parabolic Problems},
+journal = {Journal of Differential Equations},
+volume = {156},
+number = {1},
+pages = {93-121},
+year = {1999},
+issn = {0022-0396},
+doi = {https://doi.org/10.1006/jdeq.1998.3597},
+url = {https://www.sciencedirect.com/science/article/pii/S0022039698935975},
+author = {J. Carrillo and P. Wittbold},
+abstract = {We consider a general class of degenerate elliptic–parabolic problems associated with the equation b(v)t=diva(v, Dv)+f. Using Kruzhkov's method of doubling variables both in space and time we prove uniqueness and a comparison principle in L1 for renormalized solutions.}
+}
+
+@article{collins1976flow,
+title = {Flow of fluids through porous materials},
+author = {Collins, R.E.},
+abstractNote = {This book is a simple text on fundamentals of flow through porous materials and is aimed at the growing demand for improved technology in secondary and tertiary recovery of petroleum. The material is divided into 10 chapters entitled: Structure and Properties of Porous Materials; Statics of Fluids in Porous Media; Physical and Mechanical Theory of Flow; Steady Laminar Flow of Homogeneous Fluids; Transient Laminar Flow of Homogeneous Fluids; Simultaneous Flow of Immiscible Fluids; Moving Boundary Problems, Displacement, Deposition of Solids; Simultaneous Laminar Flow of Miscible Fluids; Theory of Models; and Change of Phase. (BLM)},
+doi = {},
+url = {https://www.osti.gov/biblio/7099752},
+journal = {},
+number = {},
+volume = {},
+place = {United States},
+year = {1976},
+month = {1}
+}
+
+
+@article{talsma1974effect,
+  title={The effect of initial moisture content and infiltration quantity on redistribution of soil water},
+  author={Talsma, T.},
+  journal={Soil Research},
+  volume={12},
+  number={1},
+  pages={15--26},
+  year={1974},
+  publisher={CSIRO}
+}
+
+@article{staple1969comparison,
+author = {Staple, W. J.},
+title = {Comparison of Computed and Measured Moisture Redistribution Following Infiltration},
+journal = {Soil Science Society of America Journal},
+volume = {33},
+number = {6},
+pages = {840-847},
+doi = {https://doi.org/10.2136/sssaj1969.03615995003300060015x},
+url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj1969.03615995003300060015x},
+eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/sssaj1969.03615995003300060015x},
+abstract = {Abstract Redistribution of water was measured in three soils following two different initial amounts of infiltration. The measured redistribution profiles were compared with those computed from the flow equation taking into account hysteresis in the drying tension vs water content relationship. Agreement between measured and computed moisture profiles was considered satisfactory. A procedure was outlined for determining wetting diffusivities and conductivities in the wetting front on the basis of soil moisture profiles obtained during redistribution. The different shapes of the drying scanning tension curves provided some insight into the differences in particle size distribution that influence the water-holding capacity of soils.},
+year = {1969}
+}
+
+
+@article{kacimov1998nonmonotonic,
+title = {Nonmonotonic moisture profile as a solution of Richards' equation for soils with conductivity hysteresis},
+journal = {Advances in Water Resources},
+volume = {21},
+number = {8},
+pages = {691-696},
+year = {1998},
+issn = {0309-1708},
+doi = {https://doi.org/10.1016/S0309-1708(97)00030-4},
+url = {https://www.sciencedirect.com/science/article/pii/S0309170897000304},
+author = {A.R. Kacimov and N.D. Yakimov},
+keywords = {infiltration, fingering, hysteresis, moisture, conductivity},
+abstract = {Qualitative analysis of similar moisture profiles advancing in dry soils during the constant rate infiltration is proposed. The Richards partial derivative equation is reduced to the ordinary one, which is easily integrated. Using simple kinematic relations nonmonotonic saturation-depth profiles travelling both in 1D case and in 2D finger-type flows are interpreted as a consequence of hysteresis of conductivity depending on water content. The estimations made allow the description of fingering as a result of hysteresis. The mean velocity of hysteretic finger-type flow can be higher than velocity of 1D hysteretic flow while the last advances faster than the usual monotonic front without hysteresis.}
+}
+
+@article{biswas1966redistribution,
+author = {Biswas, T.D. and Nielsen, D.R. and Biggar, J.W.},
+title = {Redistribution of soil water after infiltration},
+journal = {Water Resources Research},
+volume = {2},
+number = {3},
+pages = {513-524},
+keywords = {Infiltration, irrigation, soil water},
+doi = {https://doi.org/10.1029/WR002i003p00513},
+url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR002i003p00513},
+eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/WR002i003p00513},
+abstract = {The redistribution of soil water after the cessation of infiltration in three agricultural soils was analyzed experimentally in the laboratory. It was found that the rate of redistribution within the soil profiles depended upon the initial depth of wetting and the soil water content-soil water pressure-capillary conductivity relations. The results are discussed in relation to measured and predicted profiles of inert porous mediums. (Key words: Infiltration;irrigation; soft water)},
+year = {1966}
+}
+
+
+@article{liu1994formation,
+title = {Formation and persistence of fingered flow fields in coarse grained soils under different moisture contents},
+journal = {Journal of Hydrology},
+volume = {159},
+number = {1},
+pages = {187-195},
+year = {1994},
+issn = {0022-1694},
+doi = {https://doi.org/10.1016/0022-1694(94)90255-0},
+url = {https://www.sciencedirect.com/science/article/pii/0022169494902550},
+author = {Y. Liu and T.S. Steenhuis and J.Y. Parlange},
+abstract = {Fingers in homogeneous coarse-grained soils form from an instability in the wetting front and result in bypass flow which shortens the residence time in the vadose zone. Once formed, these fingers persist over a long period. In this paper, the formation of fingers and their persistence in initially uniform dry or wet soils are examined. Using fast-responding tensiometers in conjunction with rapid moisture measurements, it is shown that the matric potential at the finger tip and the position of the wetting curve relative to the drying curve are key factors in the persistence of the fingers. In accordance with the earlier observation, the tip and the fringes of the finger are on a wetting curve, while the remaining core of the finger is on a drying branch. This explains why large differences in moisture content can co-exist. This study also shows that the initial water content in and around the finger is crucially important in relation to which particular scanning curve is followed and, thus, to the water contents during infiltration.}
+}
+
+@article{cui2018global,
+author = {Yaokui Cui and Xi Chen and Jinyu Gao and Binyan Yan and Guoqiang Tang and Yang Hong},
+title = {Global water cycle and remote sensing big data: overview, challenge, and opportunities},
+journal = {Big Earth Data},
+volume = {2},
+number = {3},
+pages = {282-297},
+year  = {2018},
+publisher = {Taylor & Francis},
+doi = {10.1080/20964471.2018.1548052},
+
+URL = { 
+        https://doi.org/10.1080/20964471.2018.1548052
+    
+},
+eprint = { 
+        https://doi.org/10.1080/20964471.2018.1548052
+    
+}
+}
+
+
+
+@techreport{magdoff2000building,
+  title={Building soils for better crops},
+  author={Magdoff, F. and Van Es, H. and others},
+  year={2000},
+  institution={Sustainable Agriculture Network Beltsville}
+}
 
 
 @article{mualem1974conceptual,
@@ -38,7 +749,7 @@ year = {1973}
 
 @book{visintin2013differential,
   title={Differential models of hysteresis},
-  author={Visintin, Augusto},
+  author={Visintin, A.},
   volume={111},
   year={2013},
   publisher={Springer Science \& Business Media}
@@ -114,7 +825,7 @@ year = {1973}
 }
 
 @article{liu2018mixed,
-	title={A mixed discontinuous Galerkin method without interior penalty for time-dependent fourth order problems},
+	title={A mixed discontinuous {G}alerkin method without interior penalty for time-dependent fourth order problems},
 	author={Liu, H. and Yin, P.},
 	journal={Journal of Scientific Computing},
 	volume={77},
@@ -124,7 +835,7 @@ year = {1973}
 	publisher={Springer}
 }
 
-@article{CLARK2003PBM,
+@article{clark2003penalty,
 title = "The penalty boundary method",
 journal = "Finite Elements in Analysis and Design",
 volume = "39",
@@ -141,7 +852,7 @@ abstract = "Traditional methods for applying boundary conditions in finite eleme
 
 @article{leverett1941capillary,
   title={Capillary behavior in porous solids},
-  author={Leverett, MC and others},
+  author={Leverett, M.C. and others},
   journal={Transactions of the AIME},
   volume={142},
   number={01},
@@ -152,7 +863,7 @@ abstract = "Traditional methods for applying boundary conditions in finite eleme
 
 @article{huppert1982flow,
   title={Flow and instability of a viscous current down a slope},
-  author={Huppert, HE},
+  author={Huppert, H.E.},
   journal={Nature},
   volume={300},
   number={5891},
@@ -162,7 +873,7 @@ abstract = "Traditional methods for applying boundary conditions in finite eleme
 }
 
 @article{bauters1998preferential,
-author = {Bauters, Tim W. J. and Steenhuis, Tammo S. and Parlange, Jean-Yves and DiCarlo, David A.},
+author = {Bauters, T.W.J. and Steenhuis, Tammo S. and Parlange, J.Y. and DiCarlo, D.A.},
 title = {Preferential Flow in Water-Repellent Sands},
 journal = {Soil Science Society of America Journal},
 volume = {62},
@@ -201,7 +912,7 @@ year = {2000}
   publisher={APS}
 }
 
-@Article{RecoveryNianYuJCM,
+@Article{huang2020recovery,
 author = {Huang , Y. and Wei , H. and Yang , W. and Yi , N. },
 title = {Recovery Based Finite Element Method for Biharmonic Equation in 2D},
 journal = {Journal of Computational Mathematics},
@@ -217,18 +928,16 @@ doi = {https://doi.org/10.4208/jcm.1902-m2018-0187},
 url = {http://global-sci.org/intro/article_detail/jcm/13686.html}
 }
 
-@Article{YuanMFEM2020,
-	author = {Y. Yuan , and H. Song , and C. Li , and T. Sun , },
-	title = {An Upwind Mixed Finite Element Method on Changing Meshes for Positive Semi-Definite Oil-Water Displacement of Darcy-Forchheimer Flow in Porous Media},
-	journal = {Advances in Applied Mathematics and Mechanics},
+@Article{yuan2020upwind,
+	author = {Y. Yuan, and H. Song, and C. Li, and T. Sun, },
+	title = {{An Upwind Mixed Finite Element Method on Changing Meshes for Positive Semi-Definite Oil-Water Displacement of Darcy-Forchheimer Flow in Porous Media},
+	journal = {Advances in Applied Mathematics and Mechanics}},
 	year = {2020},
 	volume = {12},
 	number = {5},
 	pages = {1196--1223},
-	abstract = {
-	
+	abstract = {	
 	An upwind mixed finite element method is proposed on changing meshes for solving a positive semi-definite miscible displacement problem of Darcy-Forchheimer flow in three-dimensional porous media. The pressure and velocity could be obtained together by using a mixed finite element, and the computational accuracy of velocity is improved. The concentration equation is solved by the upwind mixed finite element scheme on changing meshes, where the upwind approximation and an expanded mixed finite element are adopted for the convection and diffusion, respectively. It solves the convection-dominated diffusion problem well and has the following improvements. First, the conservation of mass, an important physical nature, is preserved. Second, it has high order computational accuracy. An optimal-order error estimates is concluded. Numerical experiments illustrate the efficiency and application of the presented scheme.
-	
 	},
 	issn = {2075-1354},
 	doi = {https://doi.org/10.4208/aamm.OA-2019-0256},
@@ -254,7 +963,7 @@ url = {http://global-sci.org/intro/article_detail/jcm/13686.html}
 }
 
 @article{fingerWidthliu1994closed,
-author = {Liu, Yaping and Steenhuis, Tammo S. and Parlange, J.-Yves},
+author = {Liu, Y. and Steenhuis, T.S. and Parlange, J.Y.},
 title = {Closed-form solution for finger width in sandy soils at different water contents},
 journal = {Water Resources Research},
 volume = {30},
@@ -342,7 +1051,7 @@ eprint = {         https://doi.org/10.1063/1.3070527    }
 }
 
 @article{selker1992fingered,
-	author = {Selker, J. and Parlange, J. -Y. and Steenhuis, T.},
+	author = {Selker, J. and Parlange, J.Y. and Steenhuis, T.},
 	title = {Fingered flow in two dimensions: 2. Predicting finger moisture profile},
 	journal = {Water Resources Research},
 	volume = {28},
@@ -377,8 +1086,18 @@ eprint = {         https://doi.org/10.1063/1.3070527    }
 }
 
 @article{LiRuo,
-	title={\url{http://dsec.pku.edu.cn/~rli}.},
+	title={http://dsec.pku.edu.cn/~rli},
 	author={R. Li},
+	journal={},
+	volume={},
+	number={},
+	pages={},
+	year={},
+	publisher={}
+}
+@article{wikipediaSparseMatrix,
+	title={https://en.wikipedia.org/wiki/Sparse\textunderscore matrix},
+	author={},
 	journal={},
 	volume={},
 	number={},
@@ -424,7 +1143,7 @@ eprint = {         https://doi.org/10.1063/1.3070527    }
 
 @article{van2004steady,
   title={Steady flows in unsaturated soils are stable},
-  author={Van Duijn, C. J. and Pieters, G. J. M. and Raats, P. A. C.},
+  author={Van Duijn, C.J. and Pieters, G.J.M. and Raats, P.A.C.},
   journal={Transport in Porous Media},
   volume={57},
   number={2},
@@ -435,7 +1154,7 @@ eprint = {         https://doi.org/10.1063/1.3070527    }
 
 @article{zhuang2017experimental,
 	title={Experimental investigation of hysteretic dynamic capillarity effect in unsaturated flow},
-	author={Zhuang, Luwen and Hassanizadeh, S Majid and Qin, Chao-Zhong and de Waal, Arjen},
+	author={Zhuang, L. and Hassanizadeh, S.M and Qin, Ch.Z. and de Waal, A.},
 	journal={Water resources research},
 	volume={53},
 	number={11},
@@ -466,17 +1185,6 @@ eprint = {         https://doi.org/10.1063/1.3070527    }
 	eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2000WR900403},
 	abstract = {We consider the ability of the continuum-scale Richards equation (RE) with standard monotonic constitutive relations and hysteretic equations of state to model gravity-driven fingers in unsaturated porous media and, in particular, the underlying nonmonotonicity observed along the vertical extent of fingers. As published in a number of recent papers, finger-like solutions with nonmonotonic profiles can be simulated numerically using a downwind averaging method. However, we find these fingers to be artifacts, generated by the combined effects of a truncation error induced oscillation or oversaturation at the wetting front, and capillary hysteresis. As the oscillation is removed, either through grid refinement or the use of inherently monotone schemes, the numerically generated fingers disappear, and the solution becomes monotonic. Thus the RE along with standard monotonic hydraulic properties does not contain the critical physics required to model gravity-driven fingers and must be considered inadequate for unsaturated flow in initially dry, highly nonlinear, and hysteretic media where these fingers occur.},
 	year = {2001}
-}
-
-@article{zhang2017numerical,
-	title={A numerical study of two-phase flow models with dynamic capillary pressure and hysteresis},
-	author={Zhang, H. and Zegeling, P. A.},
-	journal={Transport in Porous Media},
-	volume={116},
-	number={2},
-	pages={825--846},
-	year={2017},
-	publisher={Springer}
 }
 
 @article{dong2014adaptive,
@@ -592,11 +1300,12 @@ abstract = "Infiltration of water in dry porous media is subject to a powerful g
 
 @article{beliaev2001theoretical,
   title={A theoretical model of hysteresis and dynamic effects in the capillary relation for two-phase flow in porous media},
-  author={Beliaev, A. Yu and Hassanizadeh,S. M.},
+  author={Beliaev, A.Y. and Hassanizadeh, S.M.},
   journal={Transport in Porous Media},
   volume={43},
   number={3},
   pages={487--510},
+  abstract =  {It is well known that the relationship between capillary pressure and saturation, in two-phase flow problems demonstrates memory effects and, in particular, hysteresis. Explicit representation of full hysteresis with a myriad of scanning curves in models of multiphase flow has been a difficult problem. A second complication relates to the fact that Pc–S relationships, determined under static conditions, are not necessarily valid in dynamics. There exist Pc–S relationships which take into account dynamic effects. But the combination of hysteretic and dynamic effects in the capillary relationship has not been considered yet. In this paper, we have developed new models of capillary hysteresis which also include dynamic effects. In doing so, thermodynamic considerations are employed to ensure the admissibility of the new relationships. The simplest model is constructed around main imbibition and drainage curves and assumes that all scanning curves are vertical lines. The dynamic effect is taken into account by introducing a damping coefficient in Pc–S equation. A second-order model of hysteresis with inclined scanning curves is also developed. The simplest version of proposed models is applied to two-phase incompressible flow and an example problem is solved.},
   year={2001},
   publisher={Springer}
 }
@@ -624,7 +1333,7 @@ abstract = "Infiltration of water in dry porous media is subject to a powerful g
 
 @inproceedings{sander2008dynamic,
   title={Dynamic capillary pressure, hysteresis and gravity-driven fingering in porous media},
-  author={Sander, GC and Glidewell, OJ and Norbury, J},
+  author={Sander, G.C. and Glidewell, O.J. and Norbury, J.},
   booktitle={Journal of Physics: Conference Series},
   volume={138},
   number={1},
@@ -634,7 +1343,7 @@ abstract = "Infiltration of water in dry porous media is subject to a powerful g
 }
 
 @article{ratz2014hysteresis,
-	author = {Rätz, A. and Schweizer, B.},
+	author = { R{\"a}tz, A. and Schweizer, B.},
 	title = {Hysteresis models and gravity fingering in porous media},
 	journal = {ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik},
 	volume = {94},
@@ -821,13 +1530,13 @@ doi = {10.4171/IFB/388}
 
 @article{gottlieb1992gibbs,
   title={On the Gibbs phenomenon 1: Recovering exponential accuracy from the Fourier partial sum of a non-periodic analytic function},
-  author={Gottlieb, David and Shu, Chi-Wang and Solomonoff, Alex and Vandeven, Herv{\'e}},
+  author={Gottlieb, D. and Shu, C.W. and Solomonoff, A. and Vandeven, H.},
   year={1992}
 }
 
 @article{kelly1996gibbs,
   title={Gibbs phenomenon for wavelets},
-  author={Kelly, Susan E},
+  author={Kelly, S.E.},
   journal={Applied and Computational Harmonic Analysis},
   volume={3},
   number={1},
@@ -838,14 +1547,14 @@ doi = {10.4171/IFB/388}
 
 @article{mualem1976new,
   title={A New Model for Predicting the Hydraulic Conductivity},
-  author={MUALEM, YECHEZKEL},
+  author={MUALEM, Y.},
   journal={WATER RESOURCES RESEARCH},
   year={1976}
 }
 
 @article{mualem1984modified,
   title={A modified dependent-domain theory of hysteresis},
-  author={Mualem, Yechezkel},
+  author={Mualem, Y.},
   journal={Soil Science},
   volume={137},
   number={5},
@@ -856,7 +1565,7 @@ doi = {10.4171/IFB/388}
  
 @article{yao1996stability,
 	title={Stability of wetting fronts in dry homogeneous soils under low infiltration rates},
-	author={Yao, Tzung-mow and Hendrickx, Jan MH},
+	author={Yao, T. and Hendrickx, J.M.H.},
 	journal={Soil Science Society of America Journal},
 	volume={60},
 	number={1},
@@ -866,14 +1575,31 @@ doi = {10.4171/IFB/388}
 }s
 
 @article{diment1985stability,
-	title={Stability analysis of water movement in unsaturated porous materials: 3. Experimental studies},
-	author={Diment, GA and Watson, KK},
-	journal={Water Resources Research},
-	volume={21},
-	number={7},
-	pages={979--984},
-	year={1985},
-	publisher={Wiley Online Library}
+	author = {Diment, G.A. and Watson, K.K.},
+	title = {Stability Analysis of Water Movement in Unsaturated Porous Materials: 3. Experimental Studies},
+	journal = {Water Resources Research},
+	volume = {21},
+	number = {7},
+	pages = {979-984},
+	doi = {https://doi.org/10.1029/WR021i007p00979},
+	url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR021i007p00979},
+	eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/WR021i007p00979},
+	abstract = {In the first paper of this series a detailed theory was presented in which the principles of hydrodynamic stability analysis were used to develop a linear perturbation equation for vertical water movement with nonsharp fronts. The second paper of the series discussed the application of this analysis to the stability of several soil water systems, some of which were potentially unstable. These included redistribution following infiltration, infiltration into a scale heterogeneous medium, and infiltration into a fine-over-coarse stratified profile. Although instability was expected for these systems and a noticeable trend toward instability was present, the numerical results did not predict the occurrence of such a condition. There was evidence to suggest that small amounts of initial water could have a significant effect on the damping out of instabilities that would occur under dry initial conditions. The present paper studies the effect of initial water content and grain size on wetting front instability by using a series of simple experiments. Results are presented for redistribution following infiltration for three porous materials, initially in a dry condition, and for three wetting depths prior to the onset of the redistribution phase. In addition, for the coarsest of these porous materials, a similar series of infiltration-redistribution experiments is conducted with varying amounts of initial water present. Results are also presented for the effect of initial water content on infiltration into a stratified profile. The experiments show quite clearly that even small amounts of initial water have a strongly inhibiting effect on the development of frontal instability patterns.},
+	year = {1985}
+}
+
+@article{nieber2000numerical,
+title = {Numerical simulation of experimental gravity-driven unstable flow in water repellent sand},
+journal = {Journal of Hydrology},
+volume = {231-232},
+pages = {295-307},
+year = {2000},
+issn = {0022-1694},
+doi = {https://doi.org/10.1016/S0022-1694(00)00202-X},
+url = {https://www.sciencedirect.com/science/article/pii/S002216940000202X},
+author = {J.L Nieber and T.W.J Bauters and T.S Steenhuis and J.Y. Parlange},
+keywords = {Water repellent soils, Unstable flow, Finger flow, Numerical modeling, Soil water hysteresis},
+abstract = {Laboratory experiments related to gravity-driven unstable flows in water repellent porous media contained in two-dimensional chambers have been reported [Bauters, T.W.J., DiCarlo, D.A., Steenhuis, T.S., Parlange, J.Y., 1998. Preferential flow in water-repellent sands. Soil Sci. Soc. Am. J. 62, 1185–1190]. These experiments demonstrate that water repellency has a significant impact on the stability of flow. As a follow up to these experiments, numerical solutions of the Richards equation for a two-dimensional domain are derived to examine the effect of water repellency on flow characteristics. Of particular interest is the development of gravity-driven unstable flow conditions caused by water repellency. The degree of water repellency of the porous medium is manifested in the water saturation—capillary pressure and water saturation—hydraulic conductivity relationships for the porous medium. To derive the numerical solutions, parameters closely representing the flow domain boundary conditions and the porous medium properties in the experiments of Bauters et al., were employed. In this paper we present the results of simulations for two cases: a water wettable sand and an extremely water repellent sand. The numerical solution for the water wettable sand led to a stable flow condition, while for the water-repellent sand the flow was unstable as manifested by the development of a single finger of flow. A new feature of these modeling results, in comparison to previous modeling results for gravity-driven unstable flow, is that the water pressure inside the finger core is positive. In testing the numerical solutions we compared the solution results to the laboratory results in terms of flow patterns, water pressure at a single reference point, and wetting front velocity. The degree of agreement between the laboratory results and the numerical solutions in terms of these measures is quite good.}
 }
  
 @article{bauters2000soil,
@@ -885,20 +1611,39 @@ doi = {10.4171/IFB/388}
 	issn = "0022-1694",
 	doi = "https://doi.org/10.1016/S0022-1694(00)00198-0",
 	url = "http://www.sciencedirect.com/science/article/pii/S0022169400001980",
-	author = "T. W. J. Bauters and D. A. DiCarlo and T. S. Steenhuis and J. -Y. Parlange",
+	author = "T.W.J. Bauters and D.A. DiCarlo and T.S. Steenhuis and J.Y. Parlange",
 	keywords = "Vadose zone, Unstable front, Fingered flow, Infiltration",
 	abstract = "The initial soil water content affects wetting front instability. A series of experiments were conducted where water was infiltrated into a 20/30 sand with initial volumetric water contents of 0, 0.005, 0.01, 0.015, 0.02, 0.03, 0.04 and 0.047cm3/cm3. Both water content and matric potential were measured. Water content was measured with Synchrotron X-rays at the Cornell High Energy Synchrotron Source (CHESS) and matric potential with fast responding tensiometers. The flow field changed gradually from unstable fingered flow at 0% initial water content to a wetting pattern that can be described with Richards’ equation without hysteresis. For unstable flow, the matric potential and water content decreased a short distance behind the wetting front. Except in the initially dry soil, the finger pattern began to widen immediately after infiltration. The pressure and water content of the wetting front were hyperbolically related to the initial water content. In general, this research showed that in coarse soils when an unstable wetting front occurs both the matric potential and water content drop behind the wetting front while, when a stable Richards’ type wetting front forms, the matric potential and water content increase (slightly) behind the wetting front."
 }
 
 @article{wallach2008unstable,
-	title={Unstable finger-like flow in water-repellent soils during wetting and redistribution--The case of a point water source},
-	author={Wallach, Rony and Jortzick, Christine},
-	journal={Journal of Hydrology},
-	volume={351},
-	number={1-2},
-	pages={26--41},
-	year={2008},
-	publisher={Elsevier}
+	title = {Unstable finger-like flow in water-repellent soils during wetting and redistribution – The case of a point water source},
+	journal = {Journal of Hydrology},
+	volume = {351},
+	number = {1},
+	pages = {26-41},
+	year = {2008},
+	issn = {0022-1694},
+	doi = {https://doi.org/10.1016/j.jhydrol.2007.11.032},
+	url = {https://www.sciencedirect.com/science/article/pii/S0022169407006932},
+	author = {R. Wallach and C. Jortzick},
+	keywords = {Water-repellent soil, Unstable flow, Drip irrigation, Effluent irrigation, Finger-like flow},
+	abstract = {Summary
+	Wetting and redistribution of water in air-dried wettable and water-repellent soils was investigated by tracking the spatial and temporal moisture-content variation in a transparent flow chamber. Water was applied to the soil surface as a point source at three application rates. Contrary to spontaneous penetration into the wettable soil, water ponded on the water-repellent soils prior to penetration. The interplay of water-repellency degree and water-application rate had a substantial effect on the shape and dimensions of the plume. The horizontal expansion of the wetting front in repellent soils beyond the ultimate pond width was small and did not obey the t1/2 horizontal capillary-dependent flow. Moisture content throughout the plume in the repellent soils was high and gradually increased with depth (saturation overshoot), indicating an unstable flow shaping finger-like wetting fronts. Moisture redistribution was mainly in the vertical direction, leaving a wet region at the location of the plume tip when redistribution started.}
+}
+
+@article{hassanizadeh1990mechanics,
+	title = {Mechanics and thermodynamics of multiphase flow in porous media including interphase boundaries},
+	journal = {Advances in Water Resources},
+	volume = {13},
+	number = {4},
+	pages = {169-186},
+	year = {1990},
+	issn = {0309-1708},
+	doi = {https://doi.org/10.1016/0309-1708(90)90040-B},
+	url = {https://www.sciencedirect.com/science/article/pii/030917089090040B},
+	author = {S.M. Hassanizadeh and W.G. Gray},
+	abstract = {The main purpose of this work is to develop a macroscale thermodynamic theory to describe two-phase flow in porous media. Full thermodynamic properties are assigned to the boundary surfaces separating the phases at the microscale. Macroscopic equations of balance for mass, momentum, and energy for each phase and interface along with the averaged entropy inequality are employed as the starting point. A constitutive theory is developed resulting in balance equations and thermodynamics appropriate for modelling multiphase flow in porous media. Volume fractions of phases and areal fractions of interfaces are explicitly included in the theory. Incorporation of the interface equations into the theory allows for a complete description of the problem. The manipulations provide explicit functional dependence of the capillary pressure. An extended form of Darcy's law for multiphase flow is obtained from the macroscopic equations of momentum balance. An additional term which accounts for non-uniform fluid saturation at equilibrium appears in the result.}
 }
  
 @article{hassanizadeh1993toward,
@@ -912,13 +1657,13 @@ doi = {10.4171/IFB/388}
 	issn = "0309-1708",
 	doi = "https://doi.org/10.1016/0309-1708(93)90029-F",
 	url = "http://www.sciencedirect.com/science/article/pii/030917089390029F",
-	author = "S. {M. Hassanizadeh} and W. G. Gray",
+	author = "S.M. Hassanizadeh and W.G. Gray",
 	keywords = "Unsaturated flow, two-phase flow, Darcy's law, interfacial areas, capillary pressure",
 	abstract = "The present work incorporates the effects of interface dynamics into the theoretical description of two-phase flow in a porous medium. This advance offers the potential for improved understanding and modeling of multiphase flow processes. To provide background for this work, the traditional approach to describing two-phase flow in porous media is reviewed. The universally employed empirical extension of Darcy's Law for single-phase flow to two-phase flow situations is rejected as arbitrary and subject to severe shortcomings. Burial of dynamic effects into relative permeability and capillary pressure hysteresis is shown to be an unsatisfactory theoretical construct for modeling the actual processes occurring in two-phase flow. Examination of the traditional theory at equilibrium shows that interfacial forces actually present in multiphase systems have been overlooked causing the theory to provide contradictory results. To overcome these problems, a general theory of two-phase flow is proposed that is based on the basic principles of mass, momentum, and energy conservation and the second law of thermodynamics. This theory accounts, in a systematic way, for interfacial forces that are known to have an important effect on the movement of fluid phases in a porous medium. A new equation of momentum balance accounting for the presence of interfaces and their energetics is developed. This equation reduces to Darcy's Law for the special case of single-phase flow. The extended theory has the potential to describe phenomena unaccounted for by the traditional theory and thus provides a basis for scientific understanding of the physics of two-phase flow. Application of the theory requires experimental study to ascertain the values and precise functional dependence of the constitutive coefficients that arise."
 }
 
 @article{hassanizadeh2002dynamic,
-	author = {Hassanizadeh, S. M. and Celia, M. A. and Dahle, H. K.},
+	author = {Hassanizadeh, S.M. and Celia, M.A. and Dahle, H.K.},
 	title = {Dynamic Effect in the Capillary Pressure–Saturation Relationship and its Impacts on Unsaturated Flow},
 	journal = {Vadose Zone Journal},
 	volume = {1},
@@ -939,17 +1684,21 @@ doi = {10.4171/IFB/388}
 }
 
 @incollection{philip1969theory,
-  title={Theory of infiltration},
-  author={Philip, J Re},
-  booktitle={Advances in hydroscience},
-  volume={5},
-  pages={215--296},
-  year={1969},
-  publisher={Elsevier}
+	title = {Theory of Infiltration},
+	editor = {VEN TE CHOW},
+	series = {Advances in Hydroscience},
+	publisher = {Elsevier},
+	volume = {5},
+	pages = {215-296},
+	year = {1969},
+	issn = {0065-2768},
+	doi = {https://doi.org/10.1016/B978-1-4831-9936-8.50010-6},
+	url = {https://www.sciencedirect.com/science/article/pii/B9781483199368500106},
+	author = {J.R. Philip}
 }
 
 @article{eliassi2003porous,
-	author = {Eliassi, Mehdi and Glass, Robert J.},
+	author = {Eliassi, M. and Glass, R.J.},
 	title = {On the porous continuum-scale modeling of gravity-driven fingers in unsaturated materials: Numerical solution of a hypodiffusive governing equation that incorporates a hold-back-pile-up effect},
 	journal = {Water Resources Research},
 	volume = {39},
@@ -964,7 +1713,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{eliassi2002porous,
-	author = {Eliassi, M. and Glass, R. J.},
+	author = {Eliassi, M. and Glass, R.J.},
 	title = {On the porous-continuum modeling of gravity-driven fingers in unsaturated materials: Extension of standard theory with a hold-back-pile-up effect},
 	journal = {Water Resources Research},
 	volume = {38},
@@ -980,7 +1729,7 @@ doi = {10.4171/IFB/388}
 
 @article{xiong2014flow,
   title={Flow of water in porous media with saturation overshoot: A review},
-  author={Xiong, Yunwu},
+  author={Xiong, Y.},
   journal={Journal of hydrology},
   volume={510},
   pages={353--362},
@@ -990,7 +1739,7 @@ doi = {10.4171/IFB/388}
 
 @article{ritsema1998modeling,
   title={Modeling and field evidence of finger formation and finger recurrence in a water repellent sandy soil},
-  author={Ritsema, Coen J and Dekker, Louis W and Nieber, John L and Steenhuis, Tammo S},
+  author={Ritsema, C.J. and Dekker, L.W. and Nieber, J.L. and Steenhuis, T.S.},
   journal={Water Resources Research},
   volume={34},
   number={4},
@@ -1001,7 +1750,7 @@ doi = {10.4171/IFB/388}
 
 @article{ritsema1994water,
 	title={How water moves in a water repellent sandy soil: 2. Dynamics of fingered flow},
-	author={Ritsema, Coen J and Dekker, Louis W},
+	author={Ritsema, C.J. and Dekker, L.W.},
 	journal={Water resources research},
 	volume={30},
 	number={9},
@@ -1037,26 +1786,10 @@ doi = {10.4171/IFB/388}
 	issn = "0022-1694",
 	doi = "https://doi.org/10.1016/S0022-1694(00)00197-9",
 	url = "http://www.sciencedirect.com/science/article/pii/S0022169400001979",
-	author = "T. W. J. Bauters and T. S. Steenhuis and D. A. DiCarlo and J. L. Nieber and L. W. Dekker and C. J. Ritsema and J. -Y. Parlange and R. Haverkamp",
+	author = "T.W.J. Bauters and T.S. Steenhuis and D.A. DiCarlo and J.L. Nieber and L.W. Dekker and C.J. Ritsema and J.Y. Parlange and R. Haverkamp",
 	keywords = "Contact angle, Infiltration, Preferential flow, Fingered flow, Surfactant, Constitutive relationships",
 	abstract = "Although it is generally well known that water repellent soils have distinct preferential flow patterns, the physics of this phenomenon is not well understood. In this paper, we show that water repellency affects the soil water contact angle and this, in turn, has a distinct effect on the constitutive relationships during imbibing. Using these constitutive relationships, unstable flow theory developed for coarse grained soils can be used to predict the shape and water content distribution for water repellent soils. A practical result of this paper is that with a basic experimental setup, we can characterize the imbibing front behavior by measuring the water entry pressure and the imbibing soil characteristic curve from the same heat treated soil."
 }
-
-@article{nieber2000numerical,
-	title = "Numerical simulation of experimental gravity-driven unstable flow in water repellent sand",
-	journal = "Journal of Hydrology",
-	volume = "231-232",
-	pages = "295 - 307",
-	year = "2000",
-	issn = "0022-1694",
-	doi = "https://doi.org/10.1016/S0022-1694(00)00202-X",
-	url = "http://www.sciencedirect.com/science/article/pii/S002216940000202X",
-	author = "J. L Nieber and T. W. J Bauters and T. S. Steenhuis and J. -Y. Parlange",
-	keywords = "Water repellent soils, Unstable flow, Finger flow, Numerical modeling, Soil water hysteresis",
-	abstract = "Laboratory experiments related to gravity-driven unstable flows in water repellent porous media contained in two-dimensional chambers have been reported [Bauters, T.W.J., DiCarlo, D.A., Steenhuis, T.S., Parlange, J.-Y., 1998. Preferential flow in water-repellent sands. Soil Sci. Soc. Am. J. 62, 1185–1190]. These experiments demonstrate that water repellency has a significant impact on the stability of flow. As a follow up to these experiments, numerical solutions of the Richards equation for a two-dimensional domain are derived to examine the effect of water repellency on flow characteristics. Of particular interest is the development of gravity-driven unstable flow conditions caused by water repellency. The degree of water repellency of the porous medium is manifested in the water saturation—capillary pressure and water saturation—hydraulic conductivity relationships for the porous medium. To derive the numerical solutions, parameters closely representing the flow domain boundary conditions and the porous medium properties in the experiments of Bauters et al., were employed. In this paper we present the results of simulations for two cases: a water wettable sand and an extremely water repellent sand. The numerical solution for the water wettable sand led to a stable flow condition, while for the water-repellent sand the flow was unstable as manifested by the development of a single finger of flow. A new feature of these modeling results, in comparison to previous modeling results for gravity-driven unstable flow, is that the water pressure inside the finger core is positive. In testing the numerical solutions we compared the solution results to the laboratory results in terms of flow patterns, water pressure at a single reference point, and wetting front velocity. The degree of agreement between the laboratory results and the numerical solutions in terms of these measures is quite good."
-}
-
-
 
 @article{mikelic2010global,
   title={A global existence result for the equations describing unsaturated flow in porous media with dynamic capillary pressure},
@@ -1070,7 +1803,7 @@ doi = {10.4171/IFB/388}
 
 @article{van2007new,
   title={A new class of entropy solutions of the Buckley--Leverett equation},
-  author={Van Duijn, C. J. and Peletier, L. A. and Pop, I. S.},
+  author={Van Duijn, C.J. and Peletier, L.A. and Pop, I.S.},
   journal={SIAM Journal on Mathematical Analysis},
   volume={39},
   number={2},
@@ -1119,14 +1852,14 @@ doi = {10.4171/IFB/388}
 
 @Article{van2013non,
 	Title                    = {{Non-equilibrium Models for Two Phase Flow in Porous Media: the Occurence of Saturation Overshoots}},
-	Author                   = {Van Duijn, C. J. and Hassanizadeh, S. M. and Pop, I. S. and Zegeling, P. A.},
+	Author                   = {Van Duijn, C.J. and Hassanizadeh, S.M. and Pop, I.S. and Zegeling, P.A.},
 	Year                     = {2013},
 	
 	Publisher                = {Babes-Bolyai University}
 }
 
 @article{hassanizadeh1993thermodynamic,
-	author = {Hassanizadeh, S. M. and Gray, W. G.},
+	author = {Hassanizadeh, S.M. and Gray, W.G.},
 	title = {Thermodynamic basis of capillary pressure in porous media},
 	journal = {Water Resources Research},
 	volume = {29},
@@ -1160,7 +1893,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{mirzaei2013experimental,
-	author = {Mirzaei, M. and Das, D. B.},
+	author = {Mirzaei, M. and Das, D.B.},
 	title = {Experimental investigation of hysteretic dynamic effect in capillary pressure–saturation relationship for two-phase flow in porous media},
 	journal = {AIChE Journal},
 	volume = {59},
@@ -1184,7 +1917,7 @@ doi = {10.4171/IFB/388}
 	issn = "0021-9991",
 	doi = "https://doi.org/10.1016/j.jcp.2011.01.031",
 	url = "http://www.sciencedirect.com/science/article/pii/S0021999111000568",
-	author = "G. Hu and P. A. Zegeling",
+	author = "G. Hu and P.A. Zegeling",
 	keywords = "Porous medium, Finger phenomenon, Non-equilibrium RE, Gravity-driven flow, Moving finite element method",
 	abstract = "The non-equilibrium Richards equation is solved using a moving finite element method in this paper. The governing equation is discretized spatially with a standard finite element method, and temporally with second-order Runge–Kutta schemes. A strategy of the mesh movement is based on the work by Li et al. [R.Li, T.Tang, P.W. Zhang, A moving mesh finite element algorithm for singular problems in two and three space dimensions, Journal of Computational Physics, 177 (2002) 365–393]. A Beckett and Mackenzie type monitor function is adopted. To obtain high quality meshes around the wetting front, a smoothing method which is based on the diffusive mechanism is used. With the moving mesh technique, high mesh quality and high numerical accuracy are obtained successfully. The numerical convergence and the advantage of the algorithm are demonstrated by a series of numerical experiments."
 }
@@ -1198,14 +1931,14 @@ doi = {10.4171/IFB/388}
 	issn = "0096-3003",
 	doi = "https://doi.org/10.1016/j.amc.2018.06.017",
 	url = "http://www.sciencedirect.com/science/article/pii/S0096300318305058",
-	author = "H. Zhang and P. A. Zegeling",
+	author = "H. Zhang and P.A. Zegeling",
 	keywords = "Thin film flow equation, Non-monotone traveling wave, Gravity driven finger, Moving mesh refinement, Smoothing method",
 	abstract = "We present an efficient mixed finite element method to solve the fourth-order thin film flow equations using moving mesh refinement. The moving mesh strategy is based on harmonic mappings developed by Li et al. (2001,2002). To achieve a high quality mesh, we adopt an adaptive monitor function and smooth it based on a diffusive mechanism. A variety of numerical tests are performed to demonstrate the accuracy and efficiency of the method. The moving mesh refinement accurately resolves the overshoot and downshoot structures and reduces the computational cost in comparison to numerical simulations using a fixed mesh."
 }
 
 @article{zhang2017moving,
   title={A moving mesh finite difference method for non-monotone solutions of non-equilibrium equations in porous media},
-  author={Zhang, H. and Zegeling, P. A.},
+  author={Zhang, H. and Zegeling, P.A.},
   journal={Communications in Computational Physics},
   volume={22},
   number={4},
@@ -1223,12 +1956,24 @@ doi = {10.4171/IFB/388}
 	volume = {48},
 	number = {2},
 	pages = {187--198},
-	author = {P. A. Zegeling},
+	author = {P.A. Zegeling},
 	title = {An Adaptive Grid Method for a Non-equilibrium {PDE} Model from Porous Media},
 	journal = {Journal of Mathematical Study}
 }
 
 @article{zhang2017numerical,
+	title={A numerical study of two-phase flow models with dynamic capillary pressure and hysteresis},
+	author={Zhang, H. and Zegeling, P.A.},
+	journal={Transport in Porous Media},
+	volume={116},
+	number={2},
+	pages={825--846},
+	year={2017},
+	publisher={Springer}
+}
+
+
+@article{zhang2017510numerical,
 	title = "Numerical investigations of two-phase flow with dynamic capillary pressure in porous media via a moving mesh method",
 	journal = "Journal of Computational Physics",
 	volume = "345",
@@ -1237,13 +1982,13 @@ doi = {10.4171/IFB/388}
 	issn = "0021-9991",
 	doi = "https://doi.org/10.1016/j.jcp.2017.05.041",
 	url = "http://www.sciencedirect.com/science/article/pii/S0021999117304242",
-	author = "H. Zhang and P. A. Zegeling",
+	author = "H. Zhang and P.A. Zegeling",
 	keywords = "Two-phase flow equation, Dynamic capillary pressure, Saturation overshoot, Traveling wave, Moving mesh method",
 	abstract = "Motivated by observations of saturation overshoot, this paper investigates numerical modeling of two-phase flow in porous media incorporating dynamic capillary pressure. The effects of the dynamic capillary coefficient, the infiltrating flux rate and the initial and boundary values are systematically studied using a traveling wave ansatz and efficient numerical methods. The traveling wave solutions may exhibit monotonic, non-monotonic or plateau-shaped behavior. Special attention is paid to the non-monotonic profiles. The traveling wave results are confirmed by numerically solving the partial differential equation using an accurate adaptive moving mesh solver. Comparisons between the computed solutions using the Brooks–Corey model and the laboratory measurements of saturation overshoot verify the effectiveness of our approach."
 }
 
 @article{stonestrom1994nonmonotonic,
-	author = {Stonestrom, D. A. and Akstin, K. C.},
+	author = {Stonestrom, D.A. and Akstin, K.C.},
 	title = {Nonmonotonic matric pressure histories during constant flux infiltration into homogeneous profiles},
 	journal = {Water Resources Research},
 	volume = {30},
@@ -1257,7 +2002,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{dicarlo2004experimental,
-	author = {DiCarlo, D. A.},
+	author = {DiCarlo, D.A.},
 	title = {Experimental measurements of saturation overshoot on infiltration},
 	journal = {Water Resources Research},
 	volume = {40},
@@ -1271,21 +2016,35 @@ doi = {10.4171/IFB/388}
 	year = {2004}
 }
 
-
+@article{youngs1958redistribution,
+  title={Redistribution of moisture in porous materials after infiltration: 1},
+  author={Youngs, E.G.},
+  journal={Soil science},
+  volume={86},
+  number={3},
+  pages={117--125},
+  year={1958},
+  publisher={LWW}
+}
 
 @article{shiozawa2004unexpected,
-	title={Unexpected water content profiles under flux-limited one-dimensional downward infiltration in initially dry granular media},
-	author={Shiozawa, Sho and Fujimaki, Haruyuki},
-	journal={Water resources research},
-	volume={40},
-	number={7},
-	year={2004},
-	publisher={Wiley Online Library}
+	author = {Shiozawa, S. and Fujimaki, H.},
+title = {Unexpected water content profiles under flux-limited one-dimensional downward infiltration in initially dry granular media},
+journal = {Water Resources Research},
+volume = {40},
+number = {7},
+pages = {},
+keywords = {Soil water flow, infiltration, finger flow, wetting front, Darcy's equation},
+doi = {https://doi.org/10.1029/2003WR002197},
+url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2003WR002197},
+eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2003WR002197},
+abstract = {Distinct water-content profiles, having saturated θ-bumps at and immediately behind wetting fronts, were observed in narrow columns (9 mm ID) of homogeneous air-dried glass beads under downward one-dimensional infiltration with applied water fluxes at lower than the saturated hydraulic conductivity. The infiltrating water content profiles and the position of the wetting front as a function of time were also calculated based on Richards' equation using an independently measured hydraulic conductivity function K(θ), and water retention characteristic θ(h), of the drainage process, and by applying a pressure boundary condition, hwe, which is almost atmospheric pressure, at the moving wetting front. The good agreement between the calculated profiles and the observed confirms that the dynamic water entry pressure hwe (where θ(hwe) is the saturated water content), does exist for air-dried glass beads, although it is in contradiction to the modern theory of unsaturated water flow in porous media. This physical property of dry media creates an upward negative pressure profile behind the wetting front that would inevitably produce finger flow if the column diameter were larger. At the wetting front, the water content and pressure should be completely discontinuous at the level of pore size, and hence Darcy's equation cannot be applied across the interface between the air-dried and saturated media.},
+year = {2004}
 }
 
 @article{geiger2000infiltration,
 	title={Infiltration in homogeneous sands and a mechanistic model of unstable flow},
-	author={Geiger, Steven L and Durnford, Deanna S},
+	author={Geiger, S.L. and Durnford, D.S.},
 	journal={Soil Science Society of America Journal},
 	volume={64},
 	number={2},
@@ -1295,30 +2054,36 @@ doi = {10.4171/IFB/388}
 }
 
 @article{hill1972wetting,
-	title={Wetting Front Instability in Layered Soils 1},
-	author={Hill, DE and Parlange, J-Y},
-	journal={Soil Science Society of America Journal},
-	volume={36},
-	number={5},
-	pages={697--702},
-	year={1972},
-	publisher={Soil Science Society of America}
+	author = {Hill, D.E. and Parlange, J.Y.},
+	title = {Wetting Front Instability in Layered Soils},
+	journal = {Soil Science Society of America Journal},
+	volume = {36},
+	number = {5},
+	pages = {697-702},
+	doi = {https://doi.org/10.2136/sssaj1972.03615995003600050010x},
+	url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj1972.03615995003600050010x},
+	eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/sssaj1972.03615995003600050010x},
+	abstract = {Abstract Percolation of a one-dimensional wetting front in homogeneous soil is known to be stable. On the other hand, in a layered soil whose upper layer is finer and less conductive than the coarser layer beneath, the wetting front becomes unstable and breaks into narrow wetting columns, or “fingers,” in which flow is three-dimensional. The instability originates at the interface but takes some time to develop, hence the wetting fingers appear some distance below the interface. The fingers move downward at a velocity equal to the saturated conductivity divided by the saturated volumetric water content of the bottom layer. The fingers consist of a saturated inner core percolating downward surrounded by an unsaturated outer layer. Experimental results indicate that the width of the fingers is independent of the flow rate and of irregularities at the interface. The number of fingers per unit area of interface is directly proportional to the flow rate. Instability of the wetting front in layered soil following rain or irrigation makes it possible for smaller volumes of water to penetrate deeper than would have been possible had the wetting front remained stable.},
+	year = {1972}
 }
 
 @article{raats1973unstable,
-	title={Unstable Wetting Fronts in Uniform and Nonuniform Soils 1},
-	author={Raats, PAC},
-	journal={Soil Science Society of America Journal},
-	volume={37},
-	number={5},
-	pages={681--685},
-	year={1973},
-	publisher={Soil Science Society of America}
+	author = {Raats, P.A.C.},
+	title = {Unstable Wetting Fronts in Uniform and Nonuniform Soils},
+	journal = {Soil Science Society of America Journal},
+	volume = {37},
+	number = {5},
+	pages = {681-685},
+	doi = {https://doi.org/10.2136/sssaj1973.03615995003700050017x},
+	url = {https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj1973.03615995003700050017x},
+	eprint = {https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2136/sssaj1973.03615995003700050017x},
+	abstract = {Abstract If the velocity of a plane wetting front increases with depth of penetration, then the front will be unstable, i.e., then a small perturbation of an initially plane front will tend to grow. On the basis of a simple hydraulic model due to Green and Ampt, criteria for instability are derived. It is found that decreases of depth of ponding and of capillary pressure head at the wetting front, increases with depth of the hydraulic conductivity and the initial water content, and compression of soil air ahead of the wetting front all have the effect of enhancing instability of the wetting front. The capillary pressure head at the wetting front is proportional to the surface tension and the cosine of the angle of contact of the water-air-soil interface and inversely proportional to the radius of curvature of the air-water interface, which in turn is proportional to the mean size of the soil particles. The analysis is at first restricted to uniform soils and later extended to nonuniform soils. Criteria for instability of flows in layered soils and soils with crusts are included as special cases.},
+	year = {1973}
 }
 
 @article{brooks1964hydrau,
 	title={HYDRAU uc Properties Of Porous Media},
-	author={Brooks, R and Corey, T},
+	author={Brooks, R. and Corey, T.},
 	journal={Hydrology Papers, Colorado State University},
 	volume={24},
 	year={1964}
@@ -1326,7 +2091,7 @@ doi = {10.4171/IFB/388}
 
 @Book{barenblatt1996scaling,
   Title                    = {{Scaling, self-similarity, and intermediate asymptotics: dimensional analysis and intermediate asymptotics}},
-  Author                   = {Barenblatt, Grigory Isaakovich},
+  Author                   = {Barenblatt, G.I.},
   Publisher                = {Cambridge University Press},
   Year                     = {1996},
   Volume                   = {14}
@@ -1334,7 +2099,7 @@ doi = {10.4171/IFB/388}
 
 @Book{brenner2007mathematical,
   Title                    = {{The mathematical theory of finite element methods}},
-  Author                   = {Brenner, Susanne and Scott, Ridgway},
+  Author                   = {Brenner, S. and Scott, L.R.},
   Publisher                = {Springer Science \& Business Media},
   Year                     = {2007},
   Volume                   = {15}
@@ -1363,7 +2128,7 @@ doi = {10.4171/IFB/388}
 
  
 @article{diment1983stability,
-	author = {Diment, G. A. and Watson, K. K.},
+	author = {Diment, G.A. and Watson, K.K.},
 	title = {Stability analysis of water movement in unsaturated porous materials: 2. Numerical studies},
 	journal = {Water Resources Research},
 	volume = {19},
@@ -1377,7 +2142,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{diment1982stability,
-	author = {Diment, G. A. and Watson, K. K. and Blennerhassett, P. J.},
+	author = {Diment, G.A. and Watson, K.K. and Blennerhassett, P.J.},
 	title = {Stability analysis of water movement in unsaturated porous materials: 1. Theoretical considerations},
 	journal = {Water Resources Research},
 	volume = {18},
@@ -1391,7 +2156,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{egorov2003stability,
-	author = {Egorov, A. G. and Dautov, R. Z. and Nieber, J. L. and Sheshukov, A. Y.},
+	author = {Egorov, A.G. and Dautov, R.Z. and Nieber, J.L. and Sheshukov, A.Y.},
 	title = {Stability analysis of gravity-driven infiltrating flow},
 	journal = {Water Resources Research},
 	volume = {39},
@@ -1407,7 +2172,7 @@ doi = {10.4171/IFB/388}
 
 @incollection{egorov2002stability,
 	title = "Stability analysis of traveling wave solution for gravity-driven flow",
-	editor = "S. Majid Hassanizadeh and Ruud J. Schotting and William G. Gray and George F. Pinder",
+	editor = "S.M. Hassanizadeh and Ruud J. Schotting and William G. Gray and George F. Pinder",
 	series = "Developments in Water Science",
 	publisher = "Elsevier",
 	volume = "47",
@@ -1417,12 +2182,12 @@ doi = {10.4171/IFB/388}
 	issn = "0167-5648",
 	doi = "https://doi.org/10.1016/S0167-5648(02)80053-3",
 	url = "http://www.sciencedirect.com/science/article/pii/S0167564802800533",
-	author = "A. G. Egorov and R. Z. Dautov and J. L. Nieber and A. Y. Sheshukov",
+	author = "A.G. Egorov and R.Z. Dautov and J.L. Nieber and A.Y. Sheshukov",
 	abstract = "A linear stability analysis was performed for three models of flow in unsaturated porous media to determine the conditions for growth of small perturbations. The models considered include the conventional Richards equation (RE), a sharp front Richards equation (SFRE) and an extended Richards equation (RRE). The first two models are based on the use of an equilibrium capillary pressure-saturation function, while the third model is derived using a dynamic capillary pressure-saturation function represented by a relaxation coefficient. A traveling wave solution was formulated for each of the governing equations and used as the basic solution of each model. The stability analysis was based on imposing a small perturbation to the basic solution. The RE model yields only the well-known monotonically decreasing saturation profile toward the wetting front, and the wetting front is unconditionally stable. The SFRE model by its nature has a monotonically increasing saturation profile toward the front and an abrupt drop to the initial saturation. This flow is unconditionally unstable. The RRE model is distinct from the others in that it is the only model that is able to produce truly non-monotonic saturation profiles. The wetting front for the RRE model is conditionally stable, i.e. stable for high frequency perturbations, and unstable otherwise. This leads to the existence of a wave-number for maximum amplification, which should relate to the dimensions of fingers in unstable flow."
 }
 
 @article{gerke2010preferential,
-	author = {Gerke, H. H. and Germann, P. and Nieber, J.},
+	author = {Gerke, H.H. and Germann, P. and Nieber, J.},
 	title = {Preferential and Unstable Flow: From the Pore to the Catchment Scale},
 	journal = {Vadose Zone Journal},
 	volume = {9},
@@ -1436,7 +2201,7 @@ doi = {10.4171/IFB/388}
 
 @Article{glass1996physics,
   Title                    = {{Physics of gravity fingering of immiscible fluids within porous media: An overview of current understanding and selected complicating factors}},
-  Author                   = {Glass,R. J. and Nicholl,M. J.},
+  Author                   = {Glass,R.J. and Nicholl,M.J.},
   Journal                  = {Geoderma},
   Year                     = {1996},
   Number                   = {2},
@@ -1448,7 +2213,7 @@ doi = {10.4171/IFB/388}
 
 @Article{glass1989mechanism,
   Title                    = {{Mechanism for finger persistence in homogeneous, unsaturated, porous media: Theory and verification.}},
-  Author                   = {Glass,R. J. and Steenhuis,T. S. and Parlange, J. -Y.},
+  Author                   = {Glass,R.J. and Steenhuis,T.S. and Parlange, J.Y.},
   Journal                  = {Soil Science},
   Year                     = {1989},
   Number                   = {1},
@@ -1459,7 +2224,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{glass1989wetting,
-	author = {Glass, R. J. and Steenhuis, T. S. and Parlange, J-Y.},
+	author = {Glass, R.J. and Steenhuis, T.S. and Parlange, J.Y.},
 	title = {Wetting front instability: 2. Experimental determination of relationships between system parameters and two-dimensional unstable flow field behavior in initially dry porous media},
 	journal = {Water Resources Research},
 	volume = {25},
@@ -1468,13 +2233,13 @@ doi = {10.4171/IFB/388}
 	doi = {10.1029/WR025i006p01195},
 	url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR025i006p01195},
 	eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/WR025i006p01195},
-	abstract = {This paper describes and interprets experimental studies of wetting front instability guided by the dimensional analysis presented in paper 1 (R.J. Glass et al., this issue). When a wetting front passes from a fine-textured layer of initially dry sand into an underlying coarse layer, the front breaks into fingers. A specially developed vertical slablike chamber and associated techniques were developed for the study of such fingering. The flow rate through the system is systematically varied by using different mean grain size separates for the upper layer (the same coarse separate being used for the bottom layer). Relationships between finger width, propagation velocity, moisture content, and flow rate through individual fingers are experimentally determined and related to the properties of the bottom layer and the flow rate through the system. The results are different than those found in a previous experimental study which used different techniques for sample preparation. Results obtained here agree with a formulation derived earlier by J-Y. Parlange and D.E. Hill (1976) through linear stability analysis.},
+	abstract = {This paper describes and interprets experimental studies of wetting front instability guided by the dimensional analysis presented in paper 1 (R.J. Glass et al., this issue). When a wetting front passes from a fine-textured layer of initially dry sand into an underlying coarse layer, the front breaks into fingers. A specially developed vertical slablike chamber and associated techniques were developed for the study of such fingering. The flow rate through the system is systematically varied by using different mean grain size separates for the upper layer (the same coarse separate being used for the bottom layer). Relationships between finger width, propagation velocity, moisture content, and flow rate through individual fingers are experimentally determined and related to the properties of the bottom layer and the flow rate through the system. The results are different than those found in a previous experimental study which used different techniques for sample preparation. Results obtained here agree with a formulation derived earlier by J.Y. Parlange and D.E. Hill (1976) through linear stability analysis.},
 	year = {1989}
 }
 
 @Book{joseph2013stability,
   Title                    = {{Stability of fluid motions I}},
-  Author                   = {Joseph,D. D.},
+  Author                   = {Joseph,D.D.},
   Publisher                = {Springer Science \& Business Media},
   Year                     = {2013},
   Volume                   = {27}
@@ -1482,7 +2247,7 @@ doi = {10.4171/IFB/388}
 
 @Article{kalaydjian1987macroscopic,
   Title                    = {{A macroscopic description of multiphase flow in porous media involving spacetime evolution of fluid/fluid interface}},
-  Author                   = {Kalaydjian, Fran{\c{c}}ois},
+  Author                   = {Kalaydjian, F.},
   Journal                  = {Transport in Porous Media},
   Year                     = {1987},
   Number                   = {6},
@@ -1504,13 +2269,13 @@ doi = {10.4171/IFB/388}
 	issn = "0167-5648",
 	doi = "https://doi.org/10.1016/S0167-5648(02)80039-9",
 	url = "http://www.sciencedirect.com/science/article/pii/S0167564802800399",
-	author = "R. Z. Dautov and A. G. Egorov and J. L. Nieber and A. Y. Sheshukov",
+	author = "R.Z. Dautov and A.G. Egorov and J.L. Nieber and A.Y. Sheshukov",
 	abstract = "The coupled equations for flow in unsaturated soil as proposed by Beliaev and Hassanizadeh [6] are described. These equations account for mechanism of dynamic capillary pressure via a first order relaxation function. A form of the relaxation function for the dynamic capillary pressure-saturation relation is proposed based on physical reasoning and a semi-analytical solution to the flow equations. A mass conservative and computational efficient numerical solution to the coupled equations in two space dimensions is derived and applied to the simulation of gravity-driven unstable flow. Simulated fingers have all the morphological features of fingers observed in laboratory experiments. The results demonstrate that the dynamic capillary pressure mechanism causes initial destabilization of the flow, while the mechanism of capillary hysteresis leads to finger persistence."
 }
 
 @Article{nieber2005dynamic,
   Title                    = {{Dynamic capillary pressure mechanism for instability in gravity-driven flows; review and extension to very dry conditions}},
-  Author                   = {Nieber, J. L. and Dautov, R. Z. and Egorov, A. G. and Sheshukov, A. Y.},
+  Author                   = {Nieber, J.L. and Dautov, R.Z. and Egorov, A.G. and Sheshukov, A.Y.},
   Journal                  = {Transport in Porous Media},
   Year                     = {2005},
   Number                   = {1-2},
@@ -1521,7 +2286,7 @@ doi = {10.4171/IFB/388}
 }
 
 @Article{YarzeChase2000,
-  author = 	 {Yarze, J. C. and Chase, M. P.},
+  author = 	 {Yarze, J.C. and Chase, M.P.},
   title = 	 {{E.} coli O157:H7 another waterborne outbreak!},
   journal = 	 {Am. J. Gastroenterol},
   year = 	 {2000},
@@ -1535,7 +2300,7 @@ doi = {10.4171/IFB/388}
 }
 
 @article{chapwanya2010numerical,
-	author = {Chapwanya, M. and Stockie, J. M.},
+	author = {Chapwanya, M. and Stockie, J.M.},
 	title = {Numerical simulations of gravity-driven fingering in unsaturated porous media using a nonequilibrium model},
 	journal = {Water Resources Research},
 	volume = {46},
@@ -1562,7 +2327,7 @@ doi = {10.4171/IFB/388}
 
 @Article{parlange1976theoretical,
   Title                    = {{Theoretical analysis of wetting front instability in soils.}},
-  Author                   = {Parlange,J. -Y. and Hill,D. E.},
+  Author                   = {Parlange, J.Y. and Hill, D.E.},
   Journal                  = {Soil Science},
   Year                     = {1976},
   Number                   = {4},
@@ -1574,7 +2339,7 @@ doi = {10.4171/IFB/388}
 
 @Article{philip1957theory,
   Title                    = {The theory of infiltration: 4. Sorptivity and algebraic infiltration equations.},
-  Author                   = {Philip, J. R.},
+  Author                   = {Philip, J.R.},
   Journal                  = {Soil science},
   Year                     = {1957},
   Number                   = {3},
@@ -1586,7 +2351,7 @@ doi = {10.4171/IFB/388}
 
 @InProceedings{saffman1958penetration,
   Title                    = {{The penetration of a fluid into a porous medium or Hele-Shaw cell containing a more viscous liquid}},
-  Author                   = {Saffman,P. G. and Taylor,G. I.},
+  Author                   = {Saffman,P.G. and Taylor,G.I.},
   Booktitle                = {Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
   Year                     = {1958},
   Number                   = {1242},
@@ -1606,7 +2371,7 @@ doi = {10.4171/IFB/388}
 
 @InCollection{steenhuis1998mapping,
   Title                    = {{Mapping and interpreting soil textural layers to assess agri-chemical movement at several scales along the eastern seaboard (USA)}},
-  Author                   = {Steenhuis, T. and Vandenheuvel, K. and Weiler, K. W. and Boll, J. and Daliparthy, J. and Herbert, S. and Kung, K. -J. S.},
+  Author                   = {Steenhuis, T. and Vandenheuvel, K. and Weiler, K.W. and Boll, J. and Daliparthy, J. and Herbert, S. and Kung, K.J.S.},
   Booktitle                = {Soil and Water Quality at Different Scales},
   Publisher                = {Springer},
   Year                     = {1998},
@@ -1623,7 +2388,7 @@ doi = {10.4171/IFB/388}
 	issn = "1468-1218",
 	doi = "https://doi.org/10.1016/j.nonrwa.2012.10.002",
 	url = "http://www.sciencedirect.com/science/article/pii/S1468121812002209",
-	author = "C. J. {van Duijn} and Y. Fan and L. A. Peletier and I. S. Pop",
+	author = "C.J. {van Duijn} and Y. Fan and L.A. Peletier and I.S. Pop",
 	keywords = "Dynamic capillary pressure, Non-linear, Degenerate, Pseudo-parabolic equations, Sharp travelling waves",
 	abstract = "We discuss a pseudo-parabolic equation modelling two-phase flow in porous media, which includes dynamic effects in the capillary pressure. We extend the results obtained previously for linear higher order terms and investigate the existence of travelling wave solutions in the non-linear and degenerate case. This case leads to non-smooth travelling waves, as well as to a discontinuous capillary pressure."
 }
